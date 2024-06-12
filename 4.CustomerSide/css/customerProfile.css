@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFA401; 
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 425px)
+{
+
+  .top {
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 20vw;
+    margin: auto;
+  }
+  
+  .logo{
+    width: 35vw;
+    height: auto;
+    display: block;
+    justify-content: center;
+  }
+
+  .info{
+    width: 8vw;
+    height: auto;
+    display: block;
+    justify-content: center;
+  }
+
+  .defaultprofile{
+    width: 12vw;
+    height: auto;
+    display: block;
+    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .topbar {
+    box-sizing: border-box;
+  }
+
+  .topbar:first-child {
+    margin-left: 1vw;
+    margin-right: 25vw;
+  }
+
+  .topbar:last-child {
+    margin-left: 5vw;
+  }
+
+  .profilee {
+    font-family: "Inter", serif;
+    font-size: 8vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 30vw;
+    margin-left: 40vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+  }
+  
+  .defaultprofile2 {
+    width: 38vw;
+    height: auto;
+    display: block; 
+    margin-left: 31vw; 
+    margin-top: 50vw; 
+    justify-content: center;
+    position: absolute;
+    border-color: black;
+    border: 1.5px solid; 
+    border-radius: 50%;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+  .iconcam {
+    width: 17vw;
+    height: auto;
+    display: block; 
+    margin-left: 53vw; 
+    margin-top: 74vw; 
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .name {
+    font-family: "Inter", serif;
+    font-size: 6vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 100vw;
+    margin-left: 9vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+  }
+
+  .kotaknama input[type="text"] {
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: 1px solid #272634;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 110vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+    border: none;
+    padding: 3vw;
+  }
+
+  .alamattt {
+    font-family: "Inter", serif;
+    font-size: 6vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 135vw;
+    margin-left: 9vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+  }
+
+  .kotakalamat input[type="text"] {
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: 1px solid #272634;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 145vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+    padding: 3vw;
+    border: none;
+}
+
+  .email {
+    font-family: "Inter", serif;
+    font-size: 6vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 170vw;
+    margin-left: 9vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+  }
+
+   .kotakemail input[type="email"] {
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: 1px solid #272634;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 180vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+    padding: 3vw;
+    border: none;
+  }
+
+  #simpanlanjut{
+    background-color: #272634;
+    outline: 1px solid #272634;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 205vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+  }
+  
+  #simpanlanjut: hover{
+    background-color: grey;
+  }
+
+  .kotak {
+    width: 100%;
+    height: 20%; 
+    background-color: #FFA401; 
+    display: block; 
+    position: absolute;
+    margin-top: 220vw; 
+    color: #FFA401;
+    justify-content: center;
+  }
+
+  .navbar{
+    position: sticky;
+    position: fixed;
+    width: 65vw;
+    z-index: 99;
+    bottom: 0;
+    height: 50px;
+    border-radius: 26px 26px 0 0;
+    background-color: #2B2A37;
+    padding: 0 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navBtn{
+      width: 30px;
+      height: 30px;
+      background: none;
+      border: none;
+  }
+
+  .navBtn .homeBtn{
+      width: 28;
+      height: 28;
+      fill: none; 
+  }
+
+  .navBtn .homeBtn path{
+      stroke: #FEF9FF;
+      stroke-width: 3.5;
+      stroke-linejoin: round;
+  }
+
+  .navBtn .searchBtn{
+      width: 32; 
+      height: 32;
+      fill: none;
+  }
+
+  .navBtn .searchBtn path{
+      stroke: #FEF9FF;
+      stroke-width: 3.5;
+      stroke-linejoin: round;
+  }
+
+  .navbar .chatBtn{
+      width: 32; 
+      height: 32;
+      fill: none;
+  }
+
+  .navbar .chatBtn path{
+      stroke: #FEF9FF;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+  }
+
+  .navbar .profileBtn{
+      width: 32; 
+      height: 32;
+      fill: none;
+  }
+
+  .navbar .profileBtn path{
+      stroke: #FEF9FF;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+  }
+
+  .navbar .homeBtn:hover{
+      fill: #FEF9FF;
+  }
+
+  .navbar .chatBtn:hover path:first-of-type{
+      fill: #FEF9FF;
+  }
+
+  .navbar .searchBtn:hover{
+      fill: #FEF9FF;
+  }
+
+  .navbar .profileBtn:hover{
+      fill: #FEF9FF;
+  }
+
+
+}
