@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 425px){
+    body{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEF9FF;
+        margin-bottom: 50px;
+    }
+
+    .triangleDiv{
+        position: absolute;
+        z-index: -1;
+        top: -10px;
+    }
+
+    .insideDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pageTitle{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .pageTitle p{
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .consumentForm{
+        margin-top: 150px;
+        width: 350px;
+    }
+
+    .inputNama,
+    .inputDagangan,
+    .inputEmail,
+    .inputPassword{
+        display: grid;
+        text-align: left;
+        gap: 5px;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .consumentForm div input{
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .consumentForm input[type='text'],
+    .consumentForm input[type='email'],
+    .consumentForm input[type='password']{
+        padding: 0 10px;
+        font-size: 17px;
+    }
+
+    .SdanK{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .SdanK input[type='checkbox']{
+        width: 20px;
+    }
+
+    .teksSyarat p{
+        font-size: 12.8px;
+    }
+
+    #buttonSubmit{
+        height: 75px;
+        width: 350px;
+        font-size: 25px;
+        background-color: #2B2A37;
+        border: none;
+        border-radius: 5px;
+        color: #FEF9FF;
+    }
+
+    #buttonSubmit:hover{
+        background-color: #FEF9FF;
+        color: #2B2A37;
+        border: solid;
+        border-color: #2B2A37;
+        border-width: 1px;
+    }
+}

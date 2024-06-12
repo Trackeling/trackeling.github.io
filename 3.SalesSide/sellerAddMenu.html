@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/sellerAddMenu.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="innerContent">
+            <div>
+                <p class="pageTitle">Lengkapi Profil</p>
+            </div>
+            <div class="fotoDaganganDiv">
+                <img src="assets/icons/iconGerobak.png" alt="Icon Gerobak" id="ImageGerobak">
+                <label for="inputGerobakRilCuy" id="inputGerobakFakeCuy">
+                    <img src="assets/icons/lucide_camera.png" alt="">
+                </label>
+                <input type="file" id="inputGerobakRilCuy" onchange="previewProfilePhotoGerobak(this)">
+            </div>
+            <div class="fotoPedagangDiv">
+                <img src="assets/images/DefaultFoto.png" alt="MukaPedagang" id="MukaPedagang">
+                <label for="inputMukaPedagangRil" id="inputMukaPedagangFake">
+                    <img src="assets/icons/lucide_camera_black.png" alt="Kodak">
+                </label>
+                <input type="file" id="inputMukaPedagangRil" onchange="previewProfilePhotoPenjual(this)">
+            </div>
+            <div class="backgroundNama">
+                <p class="namaDagang">Nama Dagangan</p>
+                <p class="deskripsiDagang">Deskripsi mengenai dagangan yang dijual</p>
+            </div>
+                <div class="tambahMenu">
+                <p class="titleTambahMenu">Tambahkan satu menu.</p>
+                <div class="fotoMenuDiv">
+                    <img src="assets/icons/BackgroundFotomenu.png" alt="FotoMenu" id="FotoMenu">
+                    <label for="inputFotoMenuRil" id="inputFotoMenuFake">
+                        <img src="assets/icons/lucide_camera_black.png" alt="FotoKodak">
+                    </label>
+                    <input type="file" name="inputFotoMenuRil" id="inputFotoMenuRil" onchange="previewFotoMenu(this)">
+                </div>
+                <div class="addMenuTexts">
+                    <form>
+                        <div>
+                            <label for="namaMenu">Nama Menu <span>*</span></label>
+                            <input type="text" name="namaMenu" id="namaMenu">
+                        </div>
+                        <div>
+                            <label for="DescMenu">Deskripsi Menu <span>*</span></label>
+                            <input type="text" name="DescMenu" id="DescMenu">
+                        </div>
+                        <div>
+                            <label for="price">Harga <span>*</span></label>
+                            <input type="number" name="price" id="price">
+                        </div>
+                        <div>
+                            <input type="button" value="Simpan dan Lanjut" onclick="goToNextPage()" id="buttonSubmit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/sellerAddMenu.js"></script>
+    </body>
+</html>

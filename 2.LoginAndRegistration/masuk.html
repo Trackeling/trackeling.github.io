@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/masuk.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="logoMasuk">
+            <img src="assets/images/Door.png" alt="Masuk">
+            <p style="font-size: 40px; font-weight: 600;">Selamat datang!</p>
+            <p>Login akun trackeling anda untuk lanjut.</p>
+        </div>
+        <div class="formMasuk">
+            <form>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Masukkan alamat email anda" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Masukkan kata sandi anda" required>
+                </div>
+                <div class="rememberDiv">
+                    <div class="rememberMe">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox">Ingat saya</label>
+                    </div>
+                    <div class="forgotPass">
+                        <p>Lupa kata sandi?</p>
+                    </div>
+                </div>
+                <input type="button" value="Login" id="login" onclick="redirectToNextPage()">
+                <div class="toRegis">
+                    <p>Tidak mempunyai akun?</p>
+                    <a href="chooseRegisAs.html">Registrasi</a>
+                </div>
+            </form>
+        </div>
+    <script src="js/masuk.js"></script>
+    </body>
+</html>
