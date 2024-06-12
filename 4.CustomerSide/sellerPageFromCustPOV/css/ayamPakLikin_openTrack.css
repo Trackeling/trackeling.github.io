@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 425px)
+{
+  .container{
+    background-image: url('../assets/images/trackLikin.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+  }
+  .Display {
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+    justify-content: center;
+  }
+
+  .left{
+    margin-right: 5vw;
+  }
+
+  .right{
+    margin-left: 1vw;
+    text-align: center;
+  }
+
+
+  .vector{
+    width: 8vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .bakso {
+    font-family: "Inter", serif;
+    font-size: 6vw;      
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    display: block;
+    margin-top: 1vw;
+    font-weight: 600;
+    color: white;
+  }
+
+  .navbar{
+    position: sticky;
+    position: absolute;
+    z-index: 99;
+    width: 65vw;
+    bottom: 0;
+    height: 50px;
+    border-radius: 26px 26px 0 0;
+    background-color: #2B2A37;
+    padding: 0 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+  }
+
+  .navBtn{
+      width: 30px;
+      height: 30px;
+      background: none;
+      border: none;
+  }
+
+  .navBtn .homeBtn{
+      width: 28;
+      height: 28;
+      fill: none; 
+  }
+
+  .navBtn .homeBtn path{
+      stroke: #FEF9FF;
+      stroke-width: 3.5;
+      stroke-linejoin: round;
+  }
+
+  .navBtn .searchBtn{
+      width: 32; 
+      height: 32;
+      fill: none;
+  }
+
+  .navBtn .searchBtn path{
+      stroke: #FEF9FF;
+      stroke-width: 3.5;
+      stroke-linejoin: round;
+  }
+
+  .navbar .chatBtn{
+      width: 32; 
+      height: 32;
+      fill: none;
+  }
+
+  .navbar .chatBtn path{
+      stroke: #FEF9FF;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+  }
+
+  .navbar .profileBtn{
+      width: 32; 
+      height: 32;
+      fill: none;
+  }
+
+  .navbar .profileBtn path{
+      stroke: #FEF9FF;
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+  }
+
+  .navbar .homeBtn:hover{
+      fill: #FEF9FF;
+  }
+
+  .navbar .chatBtn:hover path:first-of-type{
+      fill: #FEF9FF;
+  }
+
+  .navbar .searchBtn:hover{
+      fill: #FEF9FF;
+  }
+
+  .navbar .profileBtn:hover{
+      fill: #FEF9FF;
+  }
+
+}
