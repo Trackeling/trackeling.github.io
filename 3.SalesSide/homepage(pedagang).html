@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Pedagang</title>
+
+    <link rel="stylesheet" href="css/homepage(pedagang).css">
+</head>
+<body>
+    <div class="top">
+        <img class="logo" src="assets/icons/Trackeling Logo.png">
+        <div class="top-right">
+            <a href="https://drive.google.com/file/d/1KogjoAHUiReL3OtzDRiax477n3PTZLXc/view?usp=sharing"><img class="info" src="assets/icons/info.png"></a>
+            <img class="profile" src="assets/images/likin.png">
+        </div>
+    </div>
+    <div class="loc-container">
+        <div class="address-container">
+            <img src="assets/icons/carbon_location.png">
+            <div>
+                <p>Lokasi Anda</p>
+                <p>Jl. Jalur Sutera Bar. No.Kav. 21, RT.001/RW.004, Panunggangan, Kec. Pinang, Kota Tangerang, Banten 15143</p>
+            </div>
+        </div>
+        <img class="map" src="assets/images/maps_def.png">
+    </div>
+
+    <div class="mode-container">
+        <div class="mode-content">
+            <div id="off" class="mode-desc">
+                <img src="assets/icons/script.png">
+                <p>Aktifkan mode berjualan untuk mengakses fitur ini.</p>
+            </div>
+
+            <div id="on" class="mode-desc">
+                <img src="assets/icons/script.png">
+                <p>2 pelanggan menunggumu, lho!</p>
+            </div>
+
+            <div id="off2" class="mode-desc2">
+                <p class="bold-text">Mode Berjualan</p>
+                <p>Mode berjualan Anda tidak aktif.</p>
+            </div>
+
+            <div id="on2" class="mode-desc2">
+                <p class="bold-text">Mode Berjualan</p>
+                <p>Mode berjualan Anda sedang aktif.</p>
+            </div>
+    
+            <label class="switch">
+                <input type="checkbox" id="modeSwitch" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="panggilan">
+        <div class="panggilan-title">
+            <h3>Panggilan Pembeli</h3>
+            <p class="gray">Lihat selebihnya</p>
+        </div>
+        <div id="gak-ada-panggilan">
+            <img src="assets/icons/sadface.png">
+            <h2>Yah, belum ada panggilan nih.</h2>
+        </div>
+
+        <div id="ada-panggilan" class="panggilan-container">
+            <div class="panggilan-content">
+                <img src="assets/images/panggilan1.png">
+                <div class="panggilan-desc">
+                    <div>
+                        <p>Michelle Laraska</p>
+                        <p class="gray">Jalan Kenangan Nomor 49, ...</p>
+                    </div>
+                    <a href="../5.Chat/chat.html?name=Michelle%20Laraska&image=Assets/Image/michelle.png&message=Jalan%20Kenangan%20No.%2049"><img class="chatbtn" src="assets/icons/chat2.png"></a>
+                </div>
+            </div>
+            <div class="panggilan-content">
+                <img src="assets/images/panggilan2.png">
+                <div class="panggilan-desc">
+                    <div>
+                        <p>Revano Aditya</p>
+                        <p class="gray">Jalan Tugu Cahaya Nomor 24, ... </p>
+                    </div>
+                    <a href="../5.Chat/chat.html?name=Revano%20Aditya&image=Assets/Image/revano.png&message=Jalan%20Tugu%20Kencana%20No.%2024"><img class="chatbtn" src="assets/icons/chat2.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="navbar">
+        <button class="navBtn" onclick="location.href = '#'">
+            <svg class="homeBtn" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 11L14 2L26 11V26H17V16.5H11V26H2V11Z"/>
+            </svg>    
+        </button>
+        <button class="navBtn" onclick="location.href = '../5.Chat/messageBar(pedagang).html'">
+            <svg class="chatBtn" viewBox="0 0 35 34" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.5 8H2V23H8L5.5 32L16.5 23H27.5V8Z"/>
+                <path d="M12 2H32.5V20M2 8H27.5V23H16.5L5.5 32L8 23H2V8Z"/>
+            </svg>                                      
+        </button>
+        <button class="navBtn" onclick="location.href = 'profilePedagang.html'" id="profilbtn">
+            <svg class="profileBtn" viewBox="0 0 33 38" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 17.4185C9.5 19.9185 2 23.4846 2 35.9846C4.5 35.9846 27 35.9846 30.5 35.9846C30.5 25.5846 23.3333 18.6958 19.5 17.1958M13 17.4185C9.5 15.9846 8 12.2841 8 10C8 5.58172 11.5817 2 16 2C20.4183 2 24 5.58172 24 10C24 11.6356 23.1 15.3647 19.5 17.1958M13 17.4185C14.5 18.4846 18.0919 18.1647 19.5 17.1958"/>
+            </svg>
+        </button>
+    </div>
+    <div class="waitingDIV">
+        <img src="assets/images/waitingImg.png" alt="">
+        <h5>PANGGILAN</h5>
+        <p>A/N Michelle<br>Jalan Mutiara Nomor 55</p>
+        <p><span style="color: red;">100 meter</span> dari Anda</p>
+        <div class="timer"><p>Berakhir <span style="font-weight: 600;">dalam 5 detik</span></p></div>
+        <div class="containerButton">
+            <button><img src="assets/icons/accept.png" alt=""></button>
+            <button><img src="assets/icons/reject.png" alt=""></button>
+        </div>
+    </div>
+    <script src="js/homepage(pedagang).js"></script>
+</body>
+</html>

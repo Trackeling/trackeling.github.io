@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/chat.css">
+    <script src="js/chat.js"></script>
+</head>
+<body>
+    
+    <div class="top">
+        <!-- <p style="font-size: 35px;">←</p> -->
+        <a class="symbol" onclick="history.back()"><img src="Assets/Icons/backbtn.png"></a>
+        <img id="prof" class="profile" src="">
+        <div class="content">
+            <p id="prof-name"></p>
+            <p id="prof-name-desc"></p>
+        </div>
+    </div>
+
+    <div class="message">
+        <p>Anda sedang berkomunikasi dengan pedagang.</p>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-seller">
+            <p>Saya sudah sampai di depan, kak.</p>
+            <p class="time-seller">1:11 PM</p>
+        </div>
+
+        <div class="chat-consumer">
+            <p>Sebentar, saya sedang makan.</p>
+            <p class="time-consumer">1:12 PM</p>
+        </div>
+
+        <div class="chat-seller">
+            <p>O.</p>
+            <p class="time-seller">1:13 PM</p>
+        </div>
+        <div class="chat-seller">
+            <p>Kurang ajar.</p>
+            <p class="time-seller">1:13 PM</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="user-input">
+            <input type="text" id="msg-input" placeholder="Ketik pesan...">
+            <img id="send-button" src="Assets/Icons/sendbtn.png">
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

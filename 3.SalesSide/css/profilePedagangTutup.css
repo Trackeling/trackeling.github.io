@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre Franklin');
+
+
+@media screen and (max-width: 425px){
+    body{
+        margin: 0px;
+        font-family: 'Libre Franklin'; font-size: 14px;
+        overflow-x: hidden; 
+    }
+
+    p{margin: 0;}
+    
+    .top{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        background-color: #FEF9FF;
+        padding: 15px;
+        font-family: 'Inter';
+        font-weight: bold;
+        font-size: 28px;
+        height: 25px;
+    }
+    .top p{
+        flex-grow: 1;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translateX(0);
+    }
+    .top img{
+        object-fit: contain;
+        margin-right: 10px;
+    }
+    
+    
+    .profile{
+        background-color: orange;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+    .editbtn {
+        z-index: 2;
+        position: absolute;
+        top: 90px; 
+        right: 20px;
+        width: 30px;
+        opacity: 100%;
+    }
+    #camerabtn{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        top: 90px; 
+        right: 20px;
+        width: 30px;
+    }
+     /* edit */
+     .editprof{
+        opacity: 0;
+    }
+    #checkmark{
+        position: absolute;
+        right: 0;
+        opacity: 0;
+    }
+    
+
+    .banner{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 25% 25%;  /* x-axis and y-axis */
+        position: relative;
+    }
+    .photo{
+        position: absolute;
+        top: 250px; 
+        left: 210px; 
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 3px solid orange;
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        object-position: 45%;
+    }
+    
+    
+    .profile-content{
+        padding: 40px 40px;
+        text-align: center;
+        display: block;
+    }
+    .name{
+        font-weight: bold;
+        font-size: 30px;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .desc{
+        /* margin-top: 30px; */
+        font-weight: medium;
+        font-size: 15px;
+    }
+
+    .container2{
+        position: absolute;
+        top: calc(440px);
+        left: calc(95px);
+    }
+    .condition{
+        display: inline-flex;
+        background-color: white;
+        box-shadow: 0px 3px 3px gray;
+        border-radius: 40px;
+        padding: 10px 30px;
+    }
+    .condition p{
+        margin: auto;
+        font-weight: bold;
+    }
+    .symbol-chat{
+        display: inline-flex;
+        background-color: white;
+        box-shadow: 0px 3px 3px gray;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    
+    
+    .container3{
+        margin: 50px 20px;
+        margin-bottom: 20px;
+    }
+    .container3 p{
+        font-size: 26px;
+        font-weight: bolder;
+        margin-bottom: 20px;
+    }
+    
+    /* dk buka */
+    .tidak-berjualan{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px black;
+    }
+    .tidak-berjualan img{
+        width: 30%;
+        margin-right: 10px;
+    }
+
+    
+    /* menu */
+    .menu-title{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        margin-bottom: 10px;
+        font-size: 26px;
+        font-weight: bolder;
+    }
+    .menu-title img{
+        object-fit: contain;
+    }
+
+    .menu-container{
+        margin: 20px 15px;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+    .menu-content{
+        background-color: #FFFFFF;
+        box-shadow: 0px 3px 3px gray;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 5px;
+    }
+    .menu-img{
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: calc(100%);
+        height: calc(50%);
+        object-fit: cover;
+        filter: grayscale(100%);
+    }
+    
+    .menu-price{
+        background-color: #FEF9FF;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 20px;
+        position: relative;
+        top: calc(-15%);
+        right: calc(-3%);
+        font-size: 10px;
+        font-weight: 900;
+    }
+    .menu-desc{
+        max-width: 100%;
+        margin: 5px 10px;
+        position: relative;
+        top: calc(-5%);
+        font-size: 12px;
+    }
+    .menu-desc-name{
+        font-size: 14px;
+        font-weight: 900;
+    }
+
+    .navbar{
+        position: sticky;
+        z-index: 99;
+        bottom: 0;
+        height: 50px;
+        border-radius: 26px 26px 0 0;
+        background-color: #2B2A37;
+        padding: 0 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navBtn{
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+    }
+
+    .navBtn .homeBtn{
+        width: 28;
+        height: 28;
+        fill: none; 
+    }
+
+    .navBtn .homeBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linejoin: round;
+    }
+
+    .navBtn .searchBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+
+    .navBtn .searchBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linejoin: round;
+    }
+
+    .navbar .chatBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+
+    .navbar .chatBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
+
+    .navbar .profileBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+
+    .navbar .profileBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .navbar .homeBtn:hover{
+        fill: #FEF9FF;
+    }
+
+    .navbar .chatBtn:hover path:first-of-type{
+        fill: #FEF9FF;
+    }
+
+    .navbar .searchBtn:hover{
+        fill: #FEF9FF;
+    }
+
+    .navbar .profileBtn:hover{
+        fill: #FEF9FF;
+    }
+}
