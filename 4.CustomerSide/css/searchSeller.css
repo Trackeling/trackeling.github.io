@@ -8,6 +8,9 @@
 
 
 @media screen and (max-width: 425px){
+    html{
+        height: 100vh;
+    }
     body{
         display: block;
         justify-content: center;
