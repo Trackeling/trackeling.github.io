@@ -61,7 +61,7 @@
         font-size: 17px;
         font-family: 'Poppins', sans-serif;
         border: 1.5px solid black;
-        overflow-x: visible;
+        widthL: 20vw;
     }
 
     .rememberDiv{
