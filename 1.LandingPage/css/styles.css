@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA203;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 450px){
+
+#loadingscreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Logo {
+    width: 250px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.Loading1 {
+    width: 50px; 
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logoText p {
+    margin-top: 2vw;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+}
