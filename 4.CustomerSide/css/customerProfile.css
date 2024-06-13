@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Libre Franklin');
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  font-family: "Libre Franklin";
 }
 
 @media screen and (max-width: 425px)
