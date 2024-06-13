@@ -1,0 +1,76 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 450px){
+    body{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEF9FF;
+        margin-bottom: 50px;
+        overflow-x: hidden;
+    }
+
+    .circleDiv img{
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        margin-top: -18vw;
+    }
+
+     .insideDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pageTitleDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .pageTitleDiv img{
+        width: 70vw;
+        margin-top: 4vw;
+    }
+
+    .pageTitleDiv p{
+        font-size: 10vw;
+        font-weight: 600;
+        color: #272634;
+    }
+
+    .buttonChoice{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 200px;
+        gap: 30px;
+    }
+
+    .buttonChoice p{
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-top: -20vw;
+    }
+
+    .buttonChoice a img{
+        margin-top: -10vw;
+        background-color: none;
+        border: none;
+        width: 80vw;
+    } 
+
+    #cust{
+        margin-top: -2vw;
+    }
+}
