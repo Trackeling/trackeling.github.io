@@ -138,6 +138,8 @@
 
     .navbar{
         position: sticky;
+        position: absolute;
+        width: 64.75vw;
         z-index: 99;
         bottom: 0;
         height: 50px;
