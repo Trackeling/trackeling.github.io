@@ -113,10 +113,11 @@
         gap: 10px;
     }
     .panggilan-content{
+        z-index = 1;
         display: flex;
         flex-direction: column;
         border: 1px solid #272634;
-        border-radius: 10px;
+        border-radius: 16px;
         height: 200px;
     }
     .panggilan-desc{
