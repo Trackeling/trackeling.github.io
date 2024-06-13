@@ -29,17 +29,17 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
   var price = document.getElementById("harganum").value;
   var category = document.getElementById("selkat").value;
 
-  var menuWords = menu.trim().split(/\s+/);
-  if (menuWords.length < 5) {
-      alert("Menu harus terdiri dari lebih dari 4 kata.");
-      return;
-  }
+var menuTrim = menu.trim();
+if (menuTrim.length <= 4) {
+    alert("Menu harus terdiri dari lebih dari 4 huruf.");
+    return;
+}
 
-  var descWords = desc.trim().split(/\s+/);
-  if (descWords.length < 6) {
-      alert("Deskripsi harus terdiri dari lebih dari 5 kata.");
-      return;
-  }
+var descTrim = desc.trim();
+if (descTrim.length <= 5) {
+    alert("Deskripsi harus terdiri dari lebih dari 5 huruf.");
+    return;
+}
 
   if (!isNumeric(price)) {
       alert("Harga harus berupa angka tanpa koma.");
