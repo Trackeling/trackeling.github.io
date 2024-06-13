@@ -109,8 +109,8 @@
 
     .container2{
         position: absolute;
-        top: calc(440px);
-        left: calc(95px);
+        top: 440px;
+        left: 80px;
     }
     .condition{
         display: inline-flex;
