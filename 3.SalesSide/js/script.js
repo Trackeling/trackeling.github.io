@@ -50,6 +50,6 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
         return !isNaN(parseFloat(value)) && isFinite(value);
     }
 
-    window.location.href = "profilPedagang.html";
+    window.location.href = "profilePedagang.html";
 });
 
