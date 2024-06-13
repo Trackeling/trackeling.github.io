@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre Franklin');
+
+@media screen and (max-width: 425px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Libre Franklin'; 
+        font-size: 14px;
+    }
+    
+    .top{
+        background-color: orange;
+        border-bottom: 1px solid black;
+        display: flex;
+        padding: 30px 20px;
+    }
+    .top .profile{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+    .top .symbol{
+        width: 30px;
+        height: 30px;
+        margin: auto 0px;
+        padding-right: 15px;
+        align-items: center;
+    }
+
+    .top p{
+        margin: 0;
+        font-size: 15px;
+        margin-right: 40px;
+    }
+
+    .content{
+        margin: auto 10px;
+    }
+    #prof-name{
+        font-weight: bold;
+    }
+    
+    
+    .message{
+        opacity: 50%;
+        text-align: center;
+    }
+    
+    /* container for chat blob */
+    .chat-container{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 30px;
+    }
+    
+    /* chat blob start here */
+    .chat-consumer{
+        display: block;
+        background-color: lightgray;
+        padding: 10px 15px;
+        margin: 10px 0px;
+        max-width: 190px;
+        border-radius: 20px;
+        align-self: flex-start;
+    }
+    .chat-consumer p{
+        margin: 0;
+    }
+    .time-consumer{
+        margin: 0;
+        text-align: right;
+        font-size: small;
+    }
+    
+    
+    .chat-seller{
+        display: block;
+        background-color: orange;
+        padding: 10px 15px;
+        margin: 10px 0px;
+        max-width: calc(50%);
+        border-radius: 20px;
+        align-self: flex-end;
+    }
+    .chat-seller p {
+        margin: 0;
+        padding: 3px 0;
+    }
+    .time-seller{
+        font-size: 10px;
+        opacity: 50%;
+    }
+
+    .chat-container{
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+
+    /* user input */
+    .user-input{
+        display: grid;
+        grid-template-columns: 90% 5%;
+    }
+    input[type=text] {
+        /* width: calc(100%); */
+        margin: 5px;
+        box-sizing: border-box;
+        outline: none;
+        padding: 15px 10px;
+    }
+    input:focus { outline: 2px orange solid }
+
+    .user-input img{
+        margin: auto;
+    }
+    .user-input img:hover{
+        opacity: 50%;
+    }
+    #msg-input{
+        border: 1px solid #272634;
+        border-radius: 10px;
+    }
+
+}
