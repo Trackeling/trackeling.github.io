@@ -229,52 +229,6 @@ body {
     color: #FFA401;
     justify-content: center;
   }
-
-  .navbar{
-    width: 100vw;
-    height: auto;
-    display: block;
-    margin: auto;
-    justify-content: center;
-    margin-bottom: 0vw;
-    position: fixed; 
-    bottom: 0;
-    left: 0; 
-    z-index: 3;
-  }
-
-  .navigation {
-    display: flex;
-    align-items: center;
-    margin-top: 5vw;
-    justify-content: center;
-    margin-bottom: 0vw;
-    position: fixed; 
-    bottom: 0;
-    z-index: 100;
-  }
-
-  .navigasi {
-    box-sizing: border-box;
-  }
-
-  .navigasi:first-child {
-    margin-left: 14vw;
-    margin-right: 24vw;
-  }
-
-  .navigasi:last-child {
-    margin-left: 24vw;
-  }
-
-  .home, .chat, .profile{
-    width: 8vw;
-    height: auto;
-    display: block;
-    justify-content: center;
-    cursor: pointer;
-    margin-bottom: 3vw;
-  }
   
     .navbar{
         position: sticky;
