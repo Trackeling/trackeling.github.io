@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
-        window.location.href = "1.LandingPage/landingPage.html";
+        window.location.href = "./landingPage.html";
     }, 1500);
 });
