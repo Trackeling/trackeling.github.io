@@ -13,6 +13,7 @@
         justify-content: center;
         align-items: center;
         background-color: #FEF9FF;
+        padding-bottom: 50px;
     }
 
     .header{
@@ -134,6 +135,8 @@
 
     .navbar{
         position: sticky;
+        position: absolute;
+        width: 65vw;
         z-index: 99;
         bottom: 0;
         height: 50px;
