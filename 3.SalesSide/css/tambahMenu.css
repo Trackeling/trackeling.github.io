@@ -1,69 +1,282 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Libre Franklin');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFA401; 
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
 
+@media screen and (max-width: 425px)
+{
+  .top {
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 20vw;
+    margin: auto;
+  }
 
-@media screen and (max-width: 425px){
-    body{
-        margin: 0px;
-        font-family: 'Libre Franklin'; font-size: 14px;
-        overflow-x: hidden; 
-        background-color: #FFA401;
+.top p{
+    font-family: "Inter", serif;
+    font-size: 7vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    color: #272634;
+    position: absolute;
+}
+
+.tambahmenu {
+    font-family: "Inter", serif;
+    font-size: 5vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 26vw;
+    margin-left: 23vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+}
+
+.addmenu {
+    width: 38vw;
+    height: auto;
+    display: block; 
+    margin-left: 31vw; 
+    margin-top: 45vw; 
+    justify-content: center;
+    position: absolute;
+    border-color: black;
+    border: 1.5px solid; 
+    border-radius: 4.5vw;
+    z-index: 1;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+  .name {
+    font-family: "Inter", serif;
+    font-size: 5vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 90vw;
+    margin-left: 9vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+  }
+
+    .required {
+        color: #E33D3D;
     }
 
-    p{margin: 0;}
-    
-    .top{
-        background-color: #FEF9FF;
-        text-align: center;
-        padding: 15px;
-        font-family: 'Inter';
-        font-weight: bold;
-        font-size: 28px;
+  .kotaknama input[type="text"] {
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: 1px solid #272634;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 100vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+    padding: 3vw;
+    border: none;
+  }
+
+  .desc {
+    font-family: "Inter", serif;
+    font-size: 5vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 120vw;
+    margin-left: 9vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+  }
+
+    .required {
+        color: #E33D3D;
     }
 
-    .container-foto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 30px 10px;
-    }
-    .container-foto-title{
-        font-size: 20px;
-        font-weight: 900;
-        margin: 20px;
-    }
-    .container-foto-change{
-        background-color: #FEF9FF;
-        width: 130px;
-        padding: 20px;
-        border-radius: 20px;
-        text-align: center;
-        border: 1px solid #272634;
+  .kotakdeskripsi input[type="text"] {
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: 1px solid #272634;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 130vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+    padding: 3vw;
+    border: none;
+  }
+
+  .harga {
+    font-family: "Inter", serif;
+    font-size: 5vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 150vw;
+    margin-left: 9vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+  }
+
+    .required {
+        color: #E33D3D;
     }
 
-    /* Form */
-    form{
-        margin: 30px;
+  .kotakharga input[type="text"] {
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: 1px solid #272634;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 160vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+    padding: 3vw;
+    border: none;
+  }
+
+  .kategori {
+    font-family: "Inter", serif;
+    font-size: 5vw;      
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-top: 180vw;
+    margin-left: 9vw;           
+    font-weight: 600;
+    color: #272634;
+    position: absolute;
+  }
+
+    .required {
+        color: #E33D3D;
     }
-    label{
-        font-weight: 700;
-    }
-    input[type=text]{
-        box-sizing: border-box;
-        border-radius: 5px;
-        border: 1px solid #272634;
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-    }
-    input[type=submit]{
-        background-color: #272634;
-        color:#FEF9FF;
-        border: none;
-        border-radius: 5px;
-        padding: 15px;
-        width: 100%;
-    }
+
+  .choosecategory {
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    outline: 1px solid #272634;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 190vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+    padding: 3vw;
+    border: none;
+  }
+
+  #simpanlanjut{
+    background-color: #272634;
+    outline: 1px solid #272634;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 85%;
+    height: 13vw;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    position: absolute;
+    display: block; 
+    margin-left: 8vw; 
+    margin-top: 215vw; 
+    justify-content: center;
+    font-size: 5vw;      
+    border-radius: 5px;
+  }
+
+  #simpanlanjut: hover{
+    background-color: grey;
+  }
+
+  .kotak {
+    width: 100%;
+    height: 20%; 
+    background-color: #FFA401; 
+    display: block; 
+    position: absolute;
+    margin-top: 230vw; 
+    color: #FFA401;
+    justify-content: center;
+  }
+
+  .navbar{
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 0vw;
+    position: fixed; 
+    bottom: 0;
+    left: 0; 
+    z-index: 3;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+    justify-content: center;
+    margin-bottom: 0vw;
+    position: fixed; 
+    bottom: 0;
+    z-index: 100;
+  }
+
+  .navigasi {
+    box-sizing: border-box;
+  }
+
+  .navigasi:first-child {
+    margin-left: 14vw;
+    margin-right: 24vw;
+  }
+
+  .navigasi:last-child {
+    margin-left: 24vw;
+  }
+
+  .home, .chat, .profile{
+    width: 8vw;
+    height: auto;
+    display: block;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 3vw;
+  }
+
+}
 
     .navbar{
         position: sticky;
