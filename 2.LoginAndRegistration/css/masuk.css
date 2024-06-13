@@ -7,7 +7,7 @@
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 425px){
     body{
         display: block;
         justify-content: center;
