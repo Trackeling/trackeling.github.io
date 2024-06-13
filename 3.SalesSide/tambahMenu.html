@@ -2,36 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Menu</title>
-
-    <link rel="stylesheet" href="css/tambahMenu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Trackeling</title>
+    <link rel="stylesheet" type="text/css" href="css/sellerAddMenu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <p class="top">Tambahkan Menu</p>
-    <div class="container-foto">
-        <p class="container-foto-title">Tambahkan Satu Menu</p>
-        <div class="container-foto-change">
-            <img src="assets/icons/lucide_camera_black.png">
-            <p>Buatlah foto menu anda semenarik mungkin agar menarik para pelanggan</p>
-        </div>
+    <div class="top">
+    <p>Tambahkan Menu</p>
     </div>
 
-    <form action="profilePedagang.html">
-        <label for="name">Name menu</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="name">Deskripsi menu</label><br>
-        <input type="text" id="desc" name="desc"><br>
-        <label for="name">Harga</label><br>
-        <input type="text" id="harga" name="harga"><br>
-        <label for="name">Kategori</label><br>
-        <input type="text" id="kategori" name="kategori"><br>
+    <div class="tambahmenu">
+    <p>Tambahkan satu menu.</p>
+    </div>
 
-        <input type="submit" value="Simpan dan Lanjut">
-    </form>
+    <div class="tambahkanmenu">
+        <img src="assets/images/tambahmenu.png" alt="Can't load image" class="addmenu" id="ADDMENU">
+    </div>
+
+    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+    <div class="isiprofil">
+        <div class="kotaknama">
+            <p class="name">
+                Nama Menu<span class="required">*</span>
+            </p>
+            <input type="text" id="namamenu" placeholder="Contoh: Nasi Goreng">
+        </div>
+
+        <div class="kotakdeskripsi">
+            <p class="desc">
+                Deskripsi Menu<span class="required">*</span>
+            </p>
+            <input type="text" id="namadesc" placeholder="Contoh: Dengan potongan sosis">
+        </div>
+
+        <div class="kotakharga">
+            <p class="harga">
+                Harga<span class="required">*</span>
+            </p>
+            <input type="text" id="harganum" placeholder="Contoh: 13000">
+        </div>
+
+        <div class="kotakkategori">
+            <p class="kategori">
+                Kategori<span class="required">*</span>
+            </p>
+              <select id="selkat" name="category" class="choosecategory" required>
+              <option value="Goreng">Goreng</option>
+              <option value="Bakar">Bakar</option>
+              <option value="Kuah">Kuah</option>
+              <option value="Cemilan/kue">Cemilan/kue</option>
+              </select>
+        </div>
+
+        <button id="simpanlanjut">Simpan dan Lanjut</button> 
+    </div>
+
+    <div class="kotak">
+        INI KOTAK
+    </div>
     
-
     <div class="navbar">
         <button class="navBtn" onclick="location.href = 'homepage(pedagang).html'">
             <svg class="homeBtn" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
@@ -51,4 +82,5 @@
         </button>
     </div>
 </body>
+    <script src="js/script.js"></script>
 </html>
