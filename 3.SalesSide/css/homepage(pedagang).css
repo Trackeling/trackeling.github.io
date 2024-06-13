@@ -55,6 +55,7 @@
     /* mode */
     .mode-container{
         background-image: url("../assets/icons/background1.png");
+        background-repeat: no-repeat;
         background-size: 100%;
         margin: 20px;
         padding: 20px;
