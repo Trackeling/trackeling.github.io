@@ -9,7 +9,11 @@
 
 
 @media screen and (max-width: 425px){
+    html{
+        height: calc(100vh + 120px);
+    }
     body{
+        height: calc(100vh + 120px);
         display: block;
         justify-content: center;
         align-items: center;
