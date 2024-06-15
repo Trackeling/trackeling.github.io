@@ -248,16 +248,17 @@
   }
 
   .navbar{
-    position: sticky;
-    z-index: 99;
-    bottom: 0;
-    height: 50px;
-    border-radius: 26px 26px 0 0;
-    background-color: #2B2A37;
-    padding: 0 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        position: fixed;
+        width: -webkit-fill-available;
+        bottom: 0;
+        height: 50px;
+        border-radius: 26px 26px 0 0;
+        background-color: #2B2A37;
+        padding: 0 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
 }
 
 .navBtn{
