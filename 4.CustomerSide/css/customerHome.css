@@ -137,8 +137,8 @@
     }
 
     .navbar{
-        position: sticky;
-        z-index: 99;
+        position: fixed;
+        width: -webkit-fill-available;
         bottom: 0;
         height: 50px;
         border-radius: 26px 26px 0 0;
@@ -147,6 +147,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 99;
     }
 
     .navBtn{
