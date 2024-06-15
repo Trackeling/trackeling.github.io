@@ -9,15 +9,11 @@
 
 
 @media screen and (max-width: 425px){
-    html{
-        height: 100vh;
-    }
     body{
         display: block;
         justify-content: center;
         align-items: center;
         background-color: #FEF9FF;
-        height: 100vh;
     }
 
     .header{
@@ -138,10 +134,8 @@
     }
 
     .navbar{
-        position: sticky;
-        position: absolute;
-        width: 64.75vw;
-        z-index: 99;
+        position: fixed;
+        width: -webkit-fill-available;
         bottom: 0;
         height: 50px;
         border-radius: 26px 26px 0 0;
@@ -150,6 +144,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 99;
     }
 
     .navBtn{
