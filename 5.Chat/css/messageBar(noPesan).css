@@ -30,10 +30,8 @@
     }
 
     .navbar{
-        box-sizing: border-box;
-        position: absolute;
-        width: 100%;
-        z-index: 99;
+        position: fixed;
+        width: -webkit-fill-available;
         bottom: 0;
         height: 50px;
         border-radius: 26px 26px 0 0;
@@ -42,6 +40,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 99;
     }
 
     .navBtn{
@@ -68,7 +67,7 @@
         height: 32;
         fill: none;
     }
-
+    
     .navBtn .searchBtn path{
         stroke: #FEF9FF;
         stroke-width: 3.5;
