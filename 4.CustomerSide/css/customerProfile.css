@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Libre Franklin');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
