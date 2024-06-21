@@ -259,81 +259,81 @@
         justify-content: space-between;
         align-items: center;
         z-index: 99;
-}
+    }
 
-.navBtn{
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: none;
-}
+    .navBtn{
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+    }
 
-.navBtn .homeBtn{
-    width: 28;
-    height: 28;
-    fill: none; 
-}
+    .navBtn .homeBtn{
+        width: 28;
+        height: 28;
+        fill: none; 
+    }
 
-.navBtn .homeBtn path{
-    stroke: #FEF9FF;
-    stroke-width: 3.5;
-    stroke-linejoin: round;
-}
+    .navBtn .homeBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linejoin: round;
+    }
 
-.navBtn .searchBtn{
-    width: 32; 
-    height: 32;
-    fill: none;
-}
+    .navBtn .searchBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+    
+    .navBtn .searchBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linejoin: round;
+    }
 
-.navBtn .searchBtn path{
-    stroke: #FEF9FF;
-    stroke-width: 3.5;
-    stroke-linejoin: round;
-}
+    .navbar .chatBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
 
-.navbar .chatBtn{
-    width: 32; 
-    height: 32;
-    fill: none;
-}
+    .navbar .chatBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
 
-.navbar .chatBtn path{
-    stroke: #FEF9FF;
-    stroke-width: 3.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
-}
+    .navbar .profileBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
 
-.navbar .profileBtn{
-    width: 32; 
-    height: 32;
-    fill: none;
-}
+    .navbar .profileBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
 
-.navbar .profileBtn path{
-    stroke: #FEF9FF;
-    stroke-width: 3.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
+    .navbar .homeBtn:hover{
+        fill: #FEF9FF;
+    }
 
-.navbar .homeBtn:hover{
-    fill: #FEF9FF;
-}
+    .navbar .chatBtn:hover path:first-of-type{
+        fill: #FEF9FF;
+    }
 
-.navbar .chatBtn:hover path:first-of-type{
-    fill: #FEF9FF;
-}
+    .navbar .searchBtn:hover{
+        fill: #FEF9FF;
+    }
 
-.navbar .searchBtn:hover{
-    fill: #FEF9FF;
-}
-
-.navbar .profileBtn:hover{
-    fill: #FEF9FF;
-}
+    .navbar .profileBtn:hover{
+        fill: #FEF9FF;
+    }
 
   .waitingDIV{
     width: 70vw;
