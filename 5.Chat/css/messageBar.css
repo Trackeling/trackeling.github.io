@@ -43,6 +43,10 @@
         line-height: 0.5;
         font-size: 14px;
     }
+    .content p{
+        padding: 10px;
+    }
+    
     .name{
         font-weight: bold;
     }
