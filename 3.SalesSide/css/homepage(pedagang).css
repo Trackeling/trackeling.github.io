@@ -40,6 +40,10 @@
         width: 50px;
     }
 
+    .info{
+        background-color: white;
+        border-radius: 50%;
+
     /* map */
     .loc-container{
         margin: 20px;
