@@ -14,7 +14,9 @@
         overflow-x: hidden; 
     }
 
-    p{margin: 0;}
+    p{
+    margin-top: 0.8vw;
+     }
     
     .top{
         display: flex;
@@ -125,7 +127,8 @@
         background-color: white;
         box-shadow: 0px 3px 3px gray;
         border-radius: 40px;
-        padding: 10px 30px;
+        padding: 12px 30px;
+        margin-left: -2vw;
     }
     .condition p{
         margin: auto;
@@ -137,6 +140,7 @@
         box-shadow: 0px 3px 3px gray;
         border-radius: 50%;
         padding: 10px;
+        margin-left: 2vw;
     }
     
     
@@ -178,7 +182,6 @@
     .menu-content{
         background-color: #FFFFFF;
         box-shadow: 0px 3px 3px gray;
-        border: 1px solid black;
         border-radius: 20px;
         margin: 5px;
     }
@@ -187,8 +190,7 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         width: calc(100%);
-        height: calc(50%);
-        object-fit: cover;
+        height: calc(65%);
     }
     
     .menu-price{
@@ -197,17 +199,18 @@
         padding: 5px 10px;
         border-radius: 20px;
         position: relative;
-        top: calc(-15%);
+        top: calc(-17%);
         right: calc(-3%);
         font-size: 10px;
         font-weight: 900;
+        box-shadow: 0px 3px 3px grey;
     }
     .menu-desc{
         max-width: 100%;
         margin: 5px 10px;
         position: relative;
-        top: calc(-5%);
-        font-size: 12px;
+        top: calc(-11%);
+        font-size: 2.8vw;
     }
     .menu-desc-name{
         font-size: 14px;
