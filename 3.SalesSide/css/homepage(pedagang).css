@@ -165,14 +165,15 @@
     display: none;
     justify-content: center;
     align-items: center;
-    margin: 10px 20px;
+    margin: 20px 20px;
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 3px 3px 5px black;
   }
   #gak-ada-panggilan img{
     width: 30%;
-    margin-right: 10px;
+    margin-left: 7vw;
+    margin-right: 4vw;
   }
 
     /* The switch - the box around the slider */
