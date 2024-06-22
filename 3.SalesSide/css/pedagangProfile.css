@@ -52,27 +52,28 @@
     .editbtn {
         z-index: 2;
         position: absolute;
-        top: 90px; 
+        top: 70px;
         right: 20px;
-        width: 30px;
+        width: 22px;
         opacity: 100%;
     }
     #camerabtn{
         display: none;
         z-index: 1;
         position: absolute;
-        top: 90px; 
+        top: 70px;
         right: 20px;
         width: 30px;
     }
      /* edit */
      .editprof{
         opacity: 0;
+         margin-left: 1vw;
     }
     #checkmark{
         position: absolute;
-        right: 0;
         opacity: 0;
+        right: 8px;
     }
     
 
