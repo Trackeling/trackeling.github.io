@@ -30,6 +30,9 @@ function checked(){
     check.style.opacity = "0";
 }
 
+// profilePedagang.js
+
+// Function to handle the checkmark button click and save changes
 function saveChanges() {
     const nameInput = document.querySelector(".name input");
     const descInput = document.querySelector(".desc textarea");
@@ -40,6 +43,29 @@ function saveChanges() {
     }
 
     alert("Profile changes saved!");
+
+    const checkmarkIcon = document.getElementById("checkmark");
+    checkmarkIcon.innerHTML = '<img src="assets/icons/editbtn.png" alt="Edit Button">';
+    checkmarkIcon.onclick = function() {
+        editProfile();
+    };
+
+    document.getElementById("camerabtn").style.display = "none";
+}
+
+function editProfile() {
+    alert("Edit profile mode enabled!");
+
+    document.getElementById("camerabtn").style.display = "block";
+    
+    const checkmarkIcon = document.getElementById("checkmark");
+    checkmarkIcon.innerHTML = '<img src="assets/icons/checkmark.png" alt="Check Button">';
+    checkmarkIcon.onclick = function() {
+        saveChanges();
+    };
+
+    editField('name');
+    editField('desc');
 }
 
 function editField(field) {
@@ -78,4 +104,5 @@ document.getElementById("uploadBanner").addEventListener("change", function(even
         reader.readAsDataURL(file);
     }
 });
+
 
