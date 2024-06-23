@@ -29,3 +29,60 @@ function checked(){
     backbtn.style.display = 'flex'
     check.style.opacity = "0";
 }
+
+// profilePedagang.js
+
+// Function to handle the checkmark button click
+function saveChanges() {
+    // Save the updated profile details (this can be extended to save to a server or local storage)
+    const nameInput = document.querySelector(".name input");
+    const descInput = document.querySelector(".desc textarea");
+
+    if (nameInput && descInput) {
+        document.querySelector(".name").innerHTML = nameInput.value + ' <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField(\'name\')">';
+        document.querySelector(".desc").innerHTML = descInput.value + ' <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField(\'desc\')">';
+    }
+
+    alert("Profile changes saved!");
+}
+
+// Function to enable editing the profile
+function editField(field) {
+    const profileField = document.querySelector(`.${field}`);
+    const currentText = profileField.textContent.trim();
+
+    if (field === 'name') {
+        const nameInput = document.createElement("input");
+        nameInput.type = "text";
+        nameInput.value = currentText;
+        nameInput.classList.add("edit-input");
+
+        profileField.innerHTML = '';
+        profileField.appendChild(nameInput);
+    } else if (field === 'desc') {
+        const descInput = document.createElement("textarea");
+        descInput.value = currentText;
+        descInput.classList.add("edit-input");
+
+        profileField.innerHTML = '';
+        profileField.appendChild(descInput);
+    }
+}
+
+// Event listener for the camera button
+document.getElementById("camerabtn").addEventListener("click", function() {
+    document.getElementById("uploadBanner").click();
+});
+
+// Event listener for file upload
+document.getElementById("uploadBanner").addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById("bannerImg").src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+    }
+});
+
