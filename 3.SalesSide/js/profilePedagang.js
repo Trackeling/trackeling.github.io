@@ -30,11 +30,8 @@ function checked(){
     check.style.opacity = "0";
 }
 
-// profilePedagang.js
 
-// Function to handle the checkmark button click
 function saveChanges() {
-    // Save the updated profile details (this can be extended to save to a server or local storage)
     const nameInput = document.querySelector(".name input");
     const descInput = document.querySelector(".desc textarea");
 
@@ -46,7 +43,6 @@ function saveChanges() {
     alert("Profile changes saved!");
 }
 
-// Function to enable editing the profile
 function editField(field) {
     const profileField = document.querySelector(`.${field}`);
     const currentText = profileField.textContent.trim();
@@ -69,12 +65,10 @@ function editField(field) {
     }
 }
 
-// Event listener for the camera button
 document.getElementById("camerabtn").addEventListener("click", function() {
     document.getElementById("uploadBanner").click();
 });
 
-// Event listener for file upload
 document.getElementById("uploadBanner").addEventListener("change", function(event) {
     const file = event.target.files[0];
     if (file) {
