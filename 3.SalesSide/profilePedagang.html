@@ -7,36 +7,39 @@
     <link rel="stylesheet" href="css/pedagangProfile.css">
 </head>
 <body>
+    
     <div class="top">
+        <!-- back button mau kemana -->
         <a href="homepage(pedagang).html" id="backbtn">
             <img src="assets/icons/backbtn2.png">
         </a>
         <p>Profil Pedagang</p>
-        <a id="checkmark" onclick="saveProfile()">
+
+        <!-- check pas edit -->
+        <a id="checkmark">
             <img src="assets/icons/checkmark.png">
         </a>
     </div>
     
-    <input type="file" id="uploadBackground" style="display: none;" accept="image/*" onchange="uploadBannerImage(event)">
-    <img id="camerabtn" src="assets/icons/lucide_camera.png" onclick="document.getElementById('uploadBackground').click()">
+    <img id="camerabtn" src="assets/icons/lucide_camera.png">
 
     <div class="container">
         <div class="profile">
-            <img id="banner" class="banner" src="assets/images/1522723237978_t8lu8_fnjhbk.jpg">
+            <img class="banner" id="banner" src="assets/images/1522723237978_t8lu8_fnjhbk.jpg">
             <img class="photo" src="assets/images/likin.png">
             
             <div class="profile-content">
                 <div class="profile-content1">
-                    <p class="name" id="name">Ayam Bakar Sukabumi Pak Likin 
-                        <img class="editprof" src="assets/icons/editbtn.png" onclick="editName()">
+                    <p class="name" id="name">
+                        Ayam Bakar Sukabumi Pak Likin 
+                        <img class="editprof" id="edit-name" src="assets/icons/editbtn.png">
                     </p>
-                    <input type="text" id="nameInput" style="display: none;">
                 </div>
                 <div class="profile-content1">
-                    <p class="desc" id="desc">Ayam bakar khas Sukabumi dijamin ENAK... 
-                        <img class="editprof" src="assets/icons/editbtn.png" onclick="editDesc()">
+                    <p class="desc" id="desc">
+                        Ayam bakar khas Sukabumi dijamin ENAK... 
+                        <img class="editprof" id="edit-desc" src="assets/icons/editbtn.png">
                     </p>
-                    <input type="text" id="descInput" style="display: none;">
                 </div>
             </div>
         </div>
@@ -49,7 +52,7 @@
         </div>
         <div class="symbol-chat">
             <a href="/5.Chat/messageBar(pedagang)">
-                <img src="assets/icons/carbon_chat-bot.png">
+            <img src="assets/icons/carbon_chat-bot.png">
             </a>
         </div>
     </div>
@@ -70,30 +73,37 @@
         <div class="menu-content">
             <img class="menu-img" src="assets/images/ayamPanggang.png">
             <p class="menu-price">Rp. 20.000,00</p>
+        
             <div class="menu-desc">
                 <p class="menu-desc-name">Ayam Bakar</p>
                 <p>Ayam bakar khas Sukabumi, disajikan dengan lalapan.</p>
             </div>
         </div>
+
         <div class="menu-content">
             <img class="menu-img" src="assets/images/nasi.png">
             <p class="menu-price">Rp. 20.000,00</p>
+        
             <div class="menu-desc">
                 <p class="menu-desc-name">Nasi</p>
                 <p>Malas amat masak sendiri</p>
             </div>
         </div>
+
         <div class="menu-content">
             <img class="menu-img" src="assets/images/tempe.png">
             <p class="menu-price">Rp. 20.000,00</p>
+        
             <div class="menu-desc">
                 <p class="menu-desc-name">Tempe</p>
                 <p>Tempe goreng gurih </p>
             </div>
         </div>
+
         <div class="menu-content">
             <img class="menu-img" src="assets/images/tahugoreng.png">
             <p class="menu-price">Rp. 20.000,00</p>
+        
             <div class="menu-desc">
                 <p class="menu-desc-name">Tahu Goreng</p>
                 <p>Tahu goreng gurih</p>
@@ -120,7 +130,9 @@
         </button>
     </div>
 
+    <input type="file" id="imageUpload" style="display: none;" accept="image/*">
     <script src="js/profilePedagang.js"></script>
 </body>
 </html>
+
 
