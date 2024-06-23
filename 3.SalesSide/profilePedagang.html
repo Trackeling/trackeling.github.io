@@ -14,7 +14,7 @@
         </a>
         <p>Profil Pedagang</p>
         <!-- check button -->
-        <a id="checkmark" onclick="checked()">
+        <a id="checkmark" onclick="saveChanges()">
             <img src="assets/icons/checkmark.png" alt="Check Button">
         </a>
     </div>
@@ -24,21 +24,22 @@
     </a>
 
     <img id="camerabtn" src="assets/icons/lucide_camera.png" alt="Camera Button">
+    <input type="file" id="uploadBanner" style="display: none;">
 
     <div class="container">
         <div class="profile">
-            <img class="banner" src="assets/images/1522723237978_t8lu8_fnjhbk.jpg" alt="Banner Image">
+            <img class="banner" id="bannerImg" src="assets/images/1522723237978_t8lu8_fnjhbk.jpg" alt="Banner Image">
             <img class="photo" src="assets/images/likin.png" alt="Profile Photo">
             
             <div class="profile-content">
                 <div class="profile-content1">
                     <p class="name">Ayam Bakar Sukabumi Pak Likin 
-                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon">
+                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField('name')">
                     </p>
                 </div>
                 <div class="profile-content1">
                     <p class="desc">Ayam bakar khas Sukabumi dijamin ENAK... 
-                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon">
+                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField('desc')">
                     </p>
                 </div>
             </div>
@@ -129,5 +130,6 @@
     <script src="js/profilePedagang.js"></script>
 </body>
 </html>
+
 
 
