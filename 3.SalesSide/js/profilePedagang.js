@@ -30,38 +30,3 @@ function checked(){
     check.style.opacity = "0";
 }
 
-function checked() {
-    alert("Profile changes saved!");
-}
-
-function editProfile() {
-    alert("Edit profile mode enabled!");
-    document.getElementById("camerabtn").style.display = "block";
-    
-    const profileName = document.querySelector(".name");
-    const profileDesc = document.querySelector(".desc");
-
-    const nameInput = document.createElement("input");
-    nameInput.type = "text";
-    nameInput.value = profileName.innerText;
-    nameInput.classList.add("edit-input");
-
-    const descInput = document.createElement("textarea");
-    descInput.value = profileDesc.innerText;
-    descInput.classList.add("edit-input");
-
-    profileName.parentNode.replaceChild(nameInput, profileName);
-    profileDesc.parentNode.replaceChild(descInput, profileDesc);
-}
-
-document.getElementById("camerabtn").addEventListener("click", function() {
-    alert("Change profile picture");
-});
-
-document.querySelectorAll(".editprof").forEach(function(editIcon) {
-    editIcon.addEventListener("click", function() {
-        editProfile();
-    });
-});
-
-
