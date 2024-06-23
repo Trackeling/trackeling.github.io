@@ -32,8 +32,9 @@ function checked(){
 
 // profilePedagang.js
 
-// Function to handle the checkmark button click and save changes
+// Function to handle the checkmark button click
 function saveChanges() {
+    // Save the updated profile details (this can be extended to save to a server or local storage)
     const nameInput = document.querySelector(".name input");
     const descInput = document.querySelector(".desc textarea");
 
@@ -43,29 +44,9 @@ function saveChanges() {
     }
 
     alert("Profile changes saved!");
-
-    const checkmarkIcon = document.getElementById("checkmark");
-    checkmarkIcon.innerHTML = '<img src="assets/icons/editbtn.png" alt="Edit Button">';
-    checkmarkIcon.onclick = function() {
-        editProfile();
-    };
-
-    document.getElementById("camerabtn").style.display = "none";
 }
 
-function editProfile() {
-    document.getElementById("camerabtn").style.display = "block";
-    
-    const checkmarkIcon = document.getElementById("checkmark");
-    checkmarkIcon.innerHTML = '<img src="assets/icons/checkmark.png" alt="Check Button">';
-    checkmarkIcon.onclick = function() {
-        saveChanges();
-    };
-
-    editField('name');
-    editField('desc');
-}
-
+// Function to enable editing the profile
 function editField(field) {
     const profileField = document.querySelector(`.${field}`);
     const currentText = profileField.textContent.trim();
@@ -88,10 +69,12 @@ function editField(field) {
     }
 }
 
+// Event listener for the camera button
 document.getElementById("camerabtn").addEventListener("click", function() {
     document.getElementById("uploadBanner").click();
 });
 
+// Event listener for file upload
 document.getElementById("uploadBanner").addEventListener("change", function(event) {
     const file = event.target.files[0];
     if (file) {
@@ -102,5 +85,3 @@ document.getElementById("uploadBanner").addEventListener("change", function(even
         reader.readAsDataURL(file);
     }
 });
-
-
