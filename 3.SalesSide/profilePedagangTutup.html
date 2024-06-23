@@ -3,42 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pedagang profile POV pedagang</title>
-
+    <title>Pedagang Profile - Profil Pedagang</title>
     <link rel="stylesheet" href="css/profilePedagangTutup.css">
 </head>
 <body>
-    
     <div class="top">
-        <!-- back button mau kemana -->
-        <a href="#" id="backbtn">
-            <img src="assets/icons/backbtn2.png">
-        </a>
         <p>Profil Pedagang</p>
-
-        <!-- check pas edit -->
-        <a id="checkmark" onclick="checked()">
-            <img src="assets/icons/checkmark.png">
+        <a id="checkmark" onclick="saveChanges()">
+            <img src="assets/icons/checkmark.png" alt="Check Button">
         </a>
     </div>
-    
+
     <a id="edit" onclick="editProfile()">
-        <img class="editbtn" src="assets/icons/editbtn.png">
+        <img class="editbtn" src="assets/icons/editbtn.png" alt="Edit Profile">
     </a>
 
-    <img id="camerabtn" src="assets/icons/lucide_camera.png">
+    <img id="camerabtn" src="assets/icons/lucide_camera.png" alt="Camera Button">
+    <input type="file" id="uploadBanner" style="display: none;" accept="image/*">
 
     <div class="container">
         <div class="profile">
-            <img class="banner" src="assets/images/1522723237978_t8lu8_fnjhbk.jpg">
-            <img class="photo" src="assets/images/likin.png">
-            
+            <img class="banner" id="bannerImg" src="assets/images/1522723237978_t8lu8_fnjhbk.jpg" alt="Banner Image">
+            <img class="photo" src="assets/images/likin.png" alt="Profile Photo">
             <div class="profile-content">
                 <div class="profile-content1">
-                    <p class="name">Ayam Bakar Sukabumi Pak Likin <img class="editprof" src="assets/icons/editbtn.png"></p>
+                    <p class="name">Ayam Bakar Sukabumi Pak Likin 
+                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField('name')">
+                    </p>
                 </div>
                 <div class="profile-content1">
-                    <p class="desc">Ayam bakar khas Sukabumi dijamin ENAK... <img class="editprof" src="assets/icons/editbtn.png"></p>
+                    <p class="desc">Ayam bakar khas Sukabumi dijamin ENAK... 
+                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField('desc')">
+                    </p>
                 </div>
             </div>
         </div>
@@ -46,13 +42,17 @@
 
     <div class="container2">
         <div class="condition">
-            <img src="assets/icons/bx_walk.png">
+            <img src="assets/icons/bx_walk.png" alt="Walking Icon">
             <p>Sedang tidak berjualan</p>
         </div>
         <div class="symbol-chat">
-            <img src="assets/icons/carbon_chat-bot.png">
+            <a href="/5.Chat/messageBar(pedagang)">
+                <img src="assets/icons/carbon_chat-bot.png" alt="Chat Icon">
+            </a>
         </div>
     </div>
+</head>
+<body>
 
     <div class="container3">
         <p>Lokasi anda</p>
@@ -74,7 +74,6 @@
             <img class="menu-img" src="assets/images/ayamPanggang.png">
             <p class="menu-price">Rp. 20.000,00</p>
         
-            <!-- <img class="editbtn" src="assets/icons/editbtn.png"> -->
             <div class="menu-desc">
                 <p class="menu-desc-name">Ayam Bakar</p>
                 <p>Ayam bakar khas Sukabumi, disajikan dengan lalapan.</p>
@@ -85,9 +84,8 @@
             <img class="menu-img" src="assets/images/nasi.png">
             <p class="menu-price">Rp. 20.000,00</p>
         
-            <!-- <img class="editbtn" src="assets/icons/editbtn.png"> -->
             <div class="menu-desc">
-                <p class="menu-desc-name">Nasi</p>
+                <p class="menu-desc-name">Nasi Putih</p>
                 <p>Malas amat masak sendiri</p>
             </div>
         </div>
@@ -106,7 +104,6 @@
             <img class="menu-img" src="assets/images/tahugoreng.png">
             <p class="menu-price">Rp. 20.000,00</p>
         
-            <!-- <img class="editbtn" src="assets/icons/editbtn.png"> -->
             <div class="menu-desc">
                 <p class="menu-desc-name">Tahu Goreng</p>
                 <p>Tahu goreng gurih</p>
