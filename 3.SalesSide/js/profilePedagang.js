@@ -54,8 +54,6 @@ function saveChanges() {
 }
 
 function editProfile() {
-    alert("Edit profile mode enabled!");
-
     document.getElementById("camerabtn").style.display = "block";
     
     const checkmarkIcon = document.getElementById("checkmark");
