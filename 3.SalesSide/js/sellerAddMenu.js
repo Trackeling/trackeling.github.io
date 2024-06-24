@@ -39,49 +39,67 @@ function previewFotoMenu(input) {
   }
 }
 
-function goToNextPage(){
-  const isNameValid = getNameValidity(menuName);
-  const isDescValid = getDescValidity(menuDesc);
-  const isPriceValid = getPriceValidity(price);
-
-  if(isNameValid && isDescValid && isPriceValid){
-    location.href = "homepage(pedagang).html";
-  }
-  else{
-    alert(danger);
-    danger = '';
-  }
+function editNamaDagangan() {
+  var pElement = document.querySelector('.namaDagang');
+  var inputElement = document.getElementById('inputNamaDagang');
+  inputElement.value = pElement.innerText;
+  pElement.classList.add('hidden');
+  inputElement.classList.remove('hidden');
+  inputElement.focus();
 }
 
-function getNameValidity(input){
-  const inputValue = input.value.trim();
-
-  if(inputValue === ''){
-    danger += 'Nama Produk tidak boleh kosong\n';
-    return false;
-  }
-
-  return true;
+function saveNamaDagangan() {
+  var pElement = document.querySelector('.namaDagang');
+  var inputElement = document.getElementById('inputNamaDagang');
+  pElement.innerText = inputElement.value;
+  inputElement.classList.add('hidden');
+  pElement.classList.remove('hidden');
 }
 
-function getDescValidity(input){
-  const inputValue = input.value.trim();
-
-  if(inputValue === ''){
-    danger += 'Deskripsi Produk tidak boleh kosong\n';
-    return false;
-  }
-
-  return true;
+function editDeskripsiDagangan() {
+  var pElement = document.querySelector('.deskripsiDagang');
+  var inputElement = document.getElementById('inputDeskripsiDagang');
+  inputElement.value = pElement.innerText;
+  pElement.classList.add('hidden');
+  inputElement.classList.remove('hidden');
+  inputElement.focus();
 }
 
-function getPriceValidity(input){
-  const inputValue = input.value.trim();
-
-  if(inputValue === ''){
-    danger += 'Harga Produk tidak boleh kosong\n';
-    return false;
-  }
-
-  return true;
+function saveDeskripsiDagangan() {
+  var pElement = document.querySelector('.deskripsiDagang');
+  var inputElement = document.getElementById('inputDeskripsiDagang');
+  pElement.innerText = inputElement.value;
+  inputElement.classList.add('hidden');
+  pElement.classList.remove('hidden');
 }
+
+
+document.getElementById("simpanlanjut").addEventListener("click", function () {
+    var menu = document.getElementById("namamenu").value;
+    var desc = document.getElementById("namadesc").value;
+    var price = document.getElementById("harganum").value;
+    var category = document.getElementById("selkat").value;
+
+    var menuTrim = menu.trim();
+    if (menuTrim.length <= 4) {
+        alert("Menu harus terdiri dari lebih dari 4 huruf.");
+        return;
+    }
+
+    var descTrim = desc.trim();
+    if (descTrim.length <= 5) {
+        alert("Deskripsi harus terdiri dari lebih dari 5 huruf.");
+        return;
+    }
+
+    if (!isNumeric(price)) {
+        alert("Harga harus berupa angka tanpa koma.");
+        return;
+    }
+
+    function isNumeric(value) {
+        return !isNaN(parseFloat(value)) && isFinite(value);
+    }
+
+    window.location.href = "homepage(pedagang).html";
+});
