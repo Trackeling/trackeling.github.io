@@ -10,7 +10,6 @@ function editProfile() {
 
     const camerabtn = document.getElementById('camerabtn');
     const editbtn = document.getElementById('edit');
-    const backbtn = document.getElementById('backbtn');
     const check = document.getElementById('checkmark');
 
     if (!backgroundEdited) {
@@ -20,7 +19,6 @@ function editProfile() {
     }
 
     editbtn.style.opacity = "0";
-    backbtn.style.display = 'none';
     check.style.opacity = "100%";
 
     alert("Anda hanya dapat mengubah profil Anda sekali dalam 3 bulan");
@@ -40,7 +38,6 @@ function checked() {
     const check = document.getElementById('checkmark');
 
     editbtn.style.opacity = "100%";
-    backbtn.style.display = 'flex';
     check.style.opacity = "0";
 }
 
@@ -85,8 +82,7 @@ function saveChanges() {
         alert("Anda hanya dapat mengubah setiap bagian dari profil Anda satu kali selama 3 bulan");
         return;
     }
-
-    if (changesMade) {
+    
         const editIcons = document.getElementsByClassName('editprof');
         for (let i = 0; i < editIcons.length; i++) {
             editIcons[i].style.opacity = "0";
@@ -99,9 +95,7 @@ function saveChanges() {
 
         alert("Anda hanya dapat mengubah setiap bagian dari profil Anda satu kali selama 3 bulan");
         checked(); 
-    } else {
-        alert("Tidak ada perubahan");
-    }
+    
 }
 
 function editField(field) {
