@@ -1,3 +1,9 @@
+document.getElementById('buttonSubmit').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    checkValidation();
+});
+
+
 const nama = document.getElementById('Name');
 const selledItem = document.getElementById('sell');
 const email = document.getElementById('Email');
