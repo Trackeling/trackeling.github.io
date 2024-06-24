@@ -27,17 +27,17 @@ function checkName(input){
     const regx = /^[a-zA-Z\s]+$/;
     
     if(inputValue === ''){
-        danger += "Name shouldn't be empty!\n";
+        danger += "Nama tidak boleh kosong\n";
         return false;
     }
 
     if(inputValue.length <= 3){
-        danger += "Name should have more than 3 characters\n";
+        danger += "Nama harus lebih dari 3 huruf\n";
         return false;
     }
 
     if(!regx.test(inputValue)){
-        danger += "Name should only contain alphabet!\n";
+        danger += "Nama harus hanya mengandung alphabet!\n";
         return false;
     }
 
@@ -49,17 +49,17 @@ function checkSelledItem(input){
     const regx = /^[a-zA-Z0-9\.,\s]+$/;
 
     if(inputValue === ''){
-        danger += "Shop name shouldn't be empty!\n";
+        danger += "Nama dagang tidak boleh kosong!\n";
         return false;
     }
 
     if(inputValue.length <= 10){
-        danger += "Shop name should have more than 10 characters\n";
+        danger += "Nama dagang harus lebih dari 10 huruf\n";
         return false;
     }
 
     if(!regx.test(inputValue)){
-        danger += "Wrong shop name format!\n";
+        danger += "Format nama dagang salah\n";
         return false;
     }
     
@@ -73,12 +73,12 @@ function checkEmail(input){
     console.log(typeof input);
 
     if(inputValue === ''){
-        danger += "Email shouldn't be empty!\n";
+        danger += "Email tidak boleh kosong\n";
         return false;
     }
 
     if(!regx.test(inputValue)){
-        danger += "Wrong email format!\n";
+        danger += "Format email salah\n";
         return false;
     }
     
@@ -88,11 +88,11 @@ function checkEmail(input){
 function checkPass(input){
     const inputValue = input.value.trim();
     if(inputValue === ''){
-        danger += "Password shouldn't be empty!\n";
+        danger += "Password tidak boleh kosong!\n";
         return false;
     }
     if(inputValue.length < 8){
-        danger += "Password should be more than 8 characters!\n";
+        danger += "Password harus lebih dari 8 karakter!\n";
         return false;
     }
     
@@ -101,7 +101,7 @@ function checkPass(input){
 
 function checkSNK(input){
     if(input.checked == false){
-        danger += "You must agree to the terms and agreement!\n";
+        danger += "Anda harus menyetujui syarat dan ketentuan yang berlaku!\n";
         return false;
     }
     
