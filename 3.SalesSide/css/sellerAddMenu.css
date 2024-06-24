@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 *{
     margin: 0;
@@ -147,7 +149,7 @@
     .addMenuTexts form div{
         display: grid;
         margin: 20px 0;
-        gap: 5px;
+        gap: 20px;
     }
 
     .addMenuTexts label{
@@ -158,29 +160,174 @@
         color: red;
     }
 
-    input[type='text'],
-    input[type='number']{
-        height: 40px;
-        border-radius: 5px;
-        padding: 0 10px;
-        font-size: 17px;
-    }
+      .name {
+        font-family: "Inter", serif;
+        font-size: 5vw;      
+        text-align: center;
+        justify-content: center;
+        display: block;
+        margin-top: 10vw;
+        margin-left: 9vw;           
+        font-weight: 600;
+        color: #272634;
+        position: absolute;
+      }
 
-    #buttonSubmit{
-        height: 75px;
-        width: 350px;
-        font-size: 25px;
-        background-color: #2B2A37;
+        .required {
+            color: #E33D3D;
+        }
+
+      .kotaknama input[type="text"] {
+        width: 85%;
+        height: 13vw;
+        margin: 8px 0px;
+        box-sizing: border-box;
+        outline: 1px solid #272634;
+        position: absolute;
+        display: block; 
+        margin-left: 8vw; 
+        margin-top: 20vw; 
+        justify-content: center;
+        font-size: 5vw;      
+        border-radius: 5px;
+        padding: 3vw;
         border: none;
-        border-radius: 5px;
-        color: #FEF9FF;
-    }
+      }
 
-    #buttonSubmit:hover{
-        background-color: #FEF9FF;
-        color: #2B2A37;
-        border: solid;
-        border-color: #2B2A37;
-        border-width: 1px;
-    }
+      .desc {
+        font-family: "Inter", serif;
+        font-size: 5vw;      
+        text-align: center;
+        justify-content: center;
+        display: block;
+        margin-top: 40vw;
+        margin-left: 9vw;           
+        font-weight: 600;
+        color: #272634;
+        position: absolute;
+      }
+
+        .required {
+            color: #E33D3D;
+        }
+
+      .kotakdeskripsi input[type="text"] {
+        width: 85%;
+        height: 13vw;
+        margin: 8px 0px;
+        box-sizing: border-box;
+        outline: 1px solid #272634;
+        position: absolute;
+        display: block; 
+        margin-left: 8vw; 
+        margin-top: 50vw; 
+        justify-content: center;
+        font-size: 5vw;      
+        border-radius: 5px;
+        padding: 3vw;
+        border: none;
+      }
+
+      .harga {
+        font-family: "Inter", serif;
+        font-size: 5vw;      
+        text-align: center;
+        justify-content: center;
+        display: block;
+        margin-top: 70vw;
+        margin-left: 9vw;           
+        font-weight: 600;
+        color: #272634;
+        position: absolute;
+      }
+
+        .required {
+            color: #E33D3D;
+        }
+
+      .kotakharga input[type="text"] {
+        width: 85%;
+        height: 13vw;
+        margin: 8px 0px;
+        box-sizing: border-box;
+        outline: 1px solid #272634;
+        position: absolute;
+        display: block; 
+        margin-left: 8vw; 
+        margin-top: 80vw; 
+        justify-content: center;
+        font-size: 5vw;      
+        border-radius: 5px;
+        padding: 3vw;
+        border: none;
+      }
+
+      .kategori {
+        font-family: "Inter", serif;
+        font-size: 5vw;      
+        text-align: center;
+        justify-content: center;
+        display: block;
+        margin-top: 100vw;
+        margin-left: 9vw;           
+        font-weight: 600;
+        color: #272634;
+        position: absolute;
+      }
+
+        .required {
+            color: #E33D3D;
+        }
+
+      .choosecategory {
+        width: 85%;
+        height: 13vw;
+        margin: 8px 0px;
+        box-sizing: border-box;
+        outline: 1px solid #272634;
+        position: absolute;
+        display: block; 
+        margin-left: 8vw; 
+        margin-top: 110vw; 
+        justify-content: center;
+        font-size: 5vw;      
+        border-radius: 5px;
+        padding: 3vw;
+        border: none;
+      }
+
+      #simpanlanjut{
+        background-color: #272634;
+        outline: 1px solid #272634;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        width: 85%;
+        height: 13vw;
+        margin: 8px 0px;
+        box-sizing: border-box;
+        position: absolute;
+        display: block; 
+        margin-left: 8vw; 
+        margin-top: 135vw; 
+        justify-content: center;
+        font-size: 5vw;      
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      #simpanlanjut: hover{
+        background-color: grey;
+      }
+
+      .kotak {
+        width: 100%;
+        height: 5%; 
+        background-color: #FEF9FF; 
+        display: block; 
+        position: absolute;
+        margin-top: 160vw; 
+        color: #FEF9FF;
+        justify-content: center;
+      }
 }
