@@ -26,9 +26,12 @@
             <input type="file" id="inputMukaPedagangRil" accept="image/*" onchange="previewProfilePhotoPenjual(this)">
         </div>
         <div class="backgroundNama">
-            <p class="namaDagang">Nama Dagangan</p>
-            <p class="deskripsiDagang">Deskripsi mengenai dagangan yang dijual</p>
+            <p class="namaDagang" onclick="editNamaDagangan()">Nama Dagangan</p>
+            <input type="text" id="inputNamaDagang" class="hidden" onblur="saveNamaDagangan()">
+            <p class="deskripsiDagang" onclick="editDeskripsiDagangan()">Deskripsi mengenai dagangan yang dijual</p>
+            <input type="text" id="inputDeskripsiDagang" class="hidden" onblur="saveDeskripsiDagangan()">
         </div>
+
         <div class="tambahMenu">
             <p class="titleTambahMenu">Tambahkan satu menu.</p>
             <div class="fotoMenuDiv">
@@ -78,3 +81,4 @@
     <script src="js/sellerAddMenu.js"></script>
 </body>
 </html>
+
