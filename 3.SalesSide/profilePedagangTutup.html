@@ -18,25 +18,25 @@
         <img class="editbtn" src="assets/icons/editbtn.png" alt="Edit Profile">
     </a>
 
-    <img id="camerabtn" src="assets/icons/lucide_camera.png" alt="Camera Button">
+    <img id="camerabtn" src="assets/icons/lucide_camera.png" alt="Camera Button" style="display: none;">
     <input type="file" id="uploadBanner" style="display: none;" accept="image/*">
     <input type="file" id="uploadPhoto" style="display: none;" accept="image/*">
 
     <div class="container">
         <div class="profile">
             <img class="banner" id="bannerImg" src="assets/images/1522723237978_t8lu8_fnjhbk.jpg" alt="Banner Image">
-            <img class="photo" src="assets/images/likin.png" alt="Profile Photo">
-            <div class="profile-content">
+            <img id="profilephoto" class="photo" src="assets/images/likin.png" alt="Profile Photo">
             <!-- camera btn untuk pp -->
-            <img id="camerabtn2" src="assets/icons/lucide_camera_black.png" alt="Camera Button">
+            <img id="camerabtn2" src="assets/icons/lucide_camera_black.png" alt="Camera Button" style="display: none;">
+            <div class="profile-content">
                 <div class="profile-content1">
                     <p class="name">Ayam Bakar Sukabumi Pak Likin 
-                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField('name')">
+                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField('name')" style="opacity: 0;">
                     </p>
                 </div>
                 <div class="profile-content1">
                     <p class="desc">Ayam bakar khas Sukabumi dijamin ENAK... 
-                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField('desc')">
+                        <img class="editprof" src="assets/icons/editbtn.png" alt="Edit Icon" onclick="editField('desc')" style="opacity: 0;">
                     </p>
                 </div>
             </div>
@@ -54,13 +54,11 @@
             </a>
         </div>
     </div>
-</head>
-<body>
 
     <div class="container3">
         <p>Lokasi anda</p>
         <div class="tidak-berjualan">
-            <img src="assets/icons/sadface.png">
+            <img src="assets/icons/sadface.png" alt="Sad Face">
             <h2>Anda sedang tidak berjualan. Aktifkan mode berjual dari halaman beranda.</h2>
         </div>
     </div>
@@ -68,15 +66,15 @@
     <div class="menu-title">
         <p>Menu</p>
         <a href="tambahMenu.html">
-            <img src="assets/icons/plusbtn.png">
+            <img src="assets/icons/plusbtn.png" alt="Add Menu">
         </a>
     </div>
 
     <div class="menu-container">
         <div class="menu-content">
-            <img class="menu-img" src="assets/images/ayamPanggang.png">
+            <img class="menu-img" src="assets/images/ayamPanggang.png" alt="Ayam Panggang">
             <p class="menu-price">Rp. 20.000,00</p>
-        
+
             <div class="menu-desc">
                 <p class="menu-desc-name">Ayam Bakar</p>
                 <p>Ayam bakar khas Sukabumi, disajikan dengan lalapan.</p>
@@ -84,9 +82,9 @@
         </div>
 
         <div class="menu-content">
-            <img class="menu-img" src="assets/images/nasi.png">
+            <img class="menu-img" src="assets/images/nasi.png" alt="Nasi Putih">
             <p class="menu-price">Rp. 20.000,00</p>
-        
+
             <div class="menu-desc">
                 <p class="menu-desc-name">Nasi Putih</p>
                 <p>Malas amat masak sendiri</p>
@@ -94,9 +92,9 @@
         </div>
 
         <div class="menu-content">
-            <img class="menu-img" src="assets/images/tempe.png">
+            <img class="menu-img" src="assets/images/tempe.png" alt="Tempe Goreng">
             <p class="menu-price">Rp. 20.000,00</p>
-        
+
             <div class="menu-desc">
                 <p class="menu-desc-name">Tempe</p>
                 <p>Tempe goreng gurih </p>
@@ -104,9 +102,9 @@
         </div>
 
         <div class="menu-content">
-            <img class="menu-img" src="assets/images/tahugoreng.png">
+            <img class="menu-img" src="assets/images/tahugoreng.png" alt="Tahu Goreng">
             <p class="menu-price">Rp. 20.000,00</p>
-        
+
             <div class="menu-desc">
                 <p class="menu-desc-name">Tahu Goreng</p>
                 <p>Tahu goreng gurih</p>
