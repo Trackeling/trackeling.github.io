@@ -5,12 +5,13 @@ let backgroundEdited = false;
 function editProfile() {
     const editIcons = document.getElementsByClassName('editprof');
     for (let i = 0; i < editIcons.length; i++) {
-        editIcons[i].style.opacity = "100%";
+        editIcons[i].style.display = "initial";
     }
 
     const camerabtn = document.getElementById('camerabtn');
     const editbtn = document.getElementById('edit');
     const check = document.getElementById('checkmark');
+    const profbtn = document.getElementById('camerabtn2');
 
     if (!backgroundEdited) {
         camerabtn.style.display = "block";
@@ -18,8 +19,9 @@ function editProfile() {
         camerabtn.style.display = "none";
     }
 
-    editbtn.style.opacity = "0";
-    check.style.opacity = "100%";
+    editbtn.style.display = "none"
+    check.style.display = "block";
+    profbtn.style.display = "block";
 
     alert("Anda hanya dapat mengubah profil Anda sekali dalam 3 bulan");
 }
@@ -27,7 +29,7 @@ function editProfile() {
 function checked() {
     const editIcons = document.getElementsByClassName('editprof');
     for (let i = 0; i < editIcons.length; i++) {
-        editIcons[i].style.opacity = "0";
+        editIcons[i].style.display = "none";
     }
 
     const camerabtn = document.getElementById('camerabtn');
@@ -36,9 +38,11 @@ function checked() {
     const editbtn = document.getElementById('edit');
     const backbtn = document.getElementById('backbtn');
     const check = document.getElementById('checkmark');
+    const profbtn = document.getElementById('camerabtn2');
 
-    editbtn.style.opacity = "100%";
-    check.style.opacity = "0";
+    editbtn.style.display = "block";
+    check.style.display = "none";
+    profbtn.style.display = "none"
 }
 
 function saveChanges() {
@@ -137,6 +141,21 @@ document.getElementById("uploadBanner").addEventListener("change", function (eve
         const reader = new FileReader();
         reader.onload = function (e) {
             document.getElementById("bannerImg").src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+    }
+});
+
+document.getElementById("camerabtn2").addEventListener("click", function () {
+    document.getElementById("uploadPhoto").click();
+});
+
+document.getElementById("uploadPhoto").addEventListener("change", function (event) {
+    const file = event.target.files[0];
+    if (file && !backgroundEdited) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            document.getElementById("profilephoto").src = e.target.result;
         }
         reader.readAsDataURL(file);
     }
