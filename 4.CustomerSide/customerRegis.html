@@ -17,28 +17,41 @@
             </div>
             <form class="consumentForm">
                 <div class="inputNama">
-                    <label for="nama">Nama</label>
-                    <input type="text" name="nama" id="Name" required>
+                    <p class="nm">
+                        Nama<span class="required">*</span>
+                    </p>
+                    <input type="text" name="nama" id="Name" placeholder="Contoh: Hwang Yeji" required>
                 </div>
+
                 <div class="inputAlamat">
-                    <label for="alamat">Alamat Tempat Tinggal</label>
-                    <input type="text" name="alamat" id="Address" required>
+                    <p class="al">
+                        Alamat Tempat Tinggal<span class="required">*</span>
+                    </p>
+                    <input type="text" name="alamat" id="Address" placeholder="Contoh: Jl. Kenangan" required>
                 </div>
+
                 <div class="inputEmail">
-                    <label for="Email">Alamat E-mail</label>
-                    <input type="email" name="Email" id="Email" required>
+                    <p class="em">
+                        Alamat E-mail<span class="required">*</span>
+                    </p>
+                    <input type="email" name="Email" id="Email" placeholder="Contoh: email@example.com" required>
                 </div>
+
                 <div class="inputPassword">
-                    <label for="Pw">Password</label>
-                    <input type="password" name="Pw" id="PassW" required>
+                    <p class="ps">
+                        Password<span class="required">*</span>
+                    </p>
+                    <input type="password" name="Pw" id="PassW" placeholder="Masukkan password" required>
                 </div>
-                <div class="SdanK">
+
+                <div class="SdanK cbx">
                     <input type="checkbox" name="Syarat dan ketentuan" id="SdanKCheck" required>
-                    <div class="teksSyarat">
-                        <p>Saya setuju dengan <a href="syaratDanKetentuan.html">syarat dan ketentuan</a> yang berlaku.</p>
-                    </div>
                 </div>
-                <input type="button" value="Registrasi" onclick="checkValidation()" id="buttonSubmit">
+                <div class="teksSyarat">
+                    <p>Saya setuju dengan <a href="syaratDanKetentuan.html" class="syak">syarat dan ketentuan</a> yang berlaku.</p>
+                </div>
+
+                <button id="buttonSubmit" onclick="checkValidation()">Registrasi</button>
             </form>
         </div>
         <script src="js/customerRegis.js"></script>
