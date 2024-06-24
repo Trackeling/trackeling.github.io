@@ -52,6 +52,7 @@
     .editbtn {
         z-index: 2;
         position: absolute;
+        /* display: none; */
         top: 70px;
         right: 20px;
         width: 22px;
@@ -65,14 +66,29 @@
         right: 20px;
         width: 30px;
     }
+    #camerabtn2{
+        position: absolute;
+        top: 310px; 
+        left: 250px; 
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        border: 3px solid orange;
+        object-fit: contain;
+        padding: 5px;
+        background-color: #FFFFFF;
+        display: none;
+    }
      /* edit */
      .editprof{
-        opacity: 0;
          margin-left: 1vw;
+         display:none;
     }
+
+
+
     #checkmark{
         position: absolute;
-        opacity: 0;
+        display: none;
         right: 8px;
     }
     
