@@ -50,6 +50,7 @@
 
     .nm, .dg, .em, .ps, .cbx{
         font-family: 'Poppins', sans-serif;
+        font-weight: 600;
     }
 
     .inputNama,
@@ -74,7 +75,7 @@
     .consumentForm input[type='password']{
         padding: 0 10px;
         font-size: 17px;
-        height: 12vw;
+        height: 13vw;
     }
 
     .required{
@@ -94,6 +95,7 @@
     .teksSyarat p{
         font-size: 2.8vw;
         margin-left: 3.4vw;
+        margin-top: -6vw;
     }
 
     .syak{
@@ -109,7 +111,7 @@
         border-radius: 2vw;
         color: #FEF9FF;
         font-family: 'Poppins', sans-serif;
-        margin-top: 4vw;
+        margin-top: 7vw;
     }
 
     #buttonSubmit:hover{
