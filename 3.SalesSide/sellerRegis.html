@@ -17,25 +17,25 @@
             </div>
             <form class="consumentForm">
                 <div class="inputNama">
-                    <label for="nama">Nama</label>
+                    <label for="nama" class="nm">Nama<span class="required">*</span></label>
                     <input type="text" name="nama" id="Name" required>
                 </div>
                 <div class="inputDagangan">
-                    <label for="Dagangan">Nama Dagangan</label>
+                    <label for="Dagangan"  class="dg">Nama Dagangan<span class="required">*</span></label>
                     <input type="text" name="Dagangan" id="sell" required>
                 </div>
                 <div class="inputEmail">
-                    <label for="Email">Alamat E-mail</label>
+                    <label for="Email" class="em">Alamat E-mail<span class="required">*</span></label>
                     <input type="email" name="Email" id="Email" required>
                 </div>
                 <div class="inputPassword">
-                    <label for="Pw">Password</label>
+                    <label for="Pw" class="ps">Password<span class="required">*</span></label>
                     <input type="password" name="Pw" id="PassW" required>
                 </div>
-                <div class="SdanK">
+                <div class="SdanK" class="cbx">
                     <input type="checkbox" name="Syarat dan ketentuan" id="SdanKCheck" required>
                     <div class="teksSyarat">
-                        <p>Saya setuju dengan <a href="syaratDanKetentuan.html">syarat dan ketentuan</a> yang berlaku.</p>
+                        <p>Saya setuju dengan <a href="syaratDanKetentuan.html" class="syak">syarat dan ketentuan</a> yang berlaku.</p>
                     </div>
                 </div>
                 <input type="button" value="Registrasi" onclick="checkValidation()" id="buttonSubmit">
