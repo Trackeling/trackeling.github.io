@@ -72,20 +72,6 @@
         color: #FFA401
     }
 
-  .navbar{
-        position: fixed;
-        width: -webkit-fill-available;
-        bottom: 0;
-        height: 50px;
-        border-radius: 26px 26px 0 0;
-        background-color: #2B2A37;
-        padding: 0 75px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 99;
-    }
-
     .navBtn{
         width: 30px;
         height: 30px;
@@ -110,7 +96,7 @@
         height: 32;
         fill: none;
     }
-    
+
     .navBtn .searchBtn path{
         stroke: #FEF9FF;
         stroke-width: 3.5;
@@ -160,7 +146,53 @@
         fill: #FEF9FF;
     }
 
+    .waitingDIV{
+        width: 70vw;
+        height: 50vh;
+        position: absolute;
+        position: fixed;
+        top: 15vh;
+        bottom: 15vh;
+        left: 15vw;
+        right: 15vw;
+        border: solid 10px #877B7F;
+        border-radius: 26px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        background-color: #FFFFFF;
+    }
 
-}}
+    .waitingDIV h5{
+        font-size: 25px;
+    }
+
+    .waitingDIV p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .waitingDIV .timer{
+        padding: 10px 30px;
+        box-shadow: 0px 2px 3px #272634;
+        border-radius: 50px;
+    }
+
+    .waitingDIV .containerButton{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .waitingDIV button{
+        border: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 80px;
+    }
+    .blur{
+        filter: blur(10px);
+    }
 }
 
