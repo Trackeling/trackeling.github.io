@@ -72,7 +72,7 @@
         color: #FFA401
     }
 
-    .navbar{
+  .navbar{
         position: fixed;
         width: -webkit-fill-available;
         bottom: 0;
@@ -159,5 +159,8 @@
     .navbar .profileBtn:hover{
         fill: #FEF9FF;
     }
+
+
+}}
 }
 
