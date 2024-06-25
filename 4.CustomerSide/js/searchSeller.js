@@ -4,7 +4,7 @@ const filterData = (query) => {
     const allCard = document.querySelectorAll('.sellerCardsSearch');
 
     allCard.forEach(elem => {
-        let data = elem.querySelector('.sellerProfileText').children[1];
+        let data = elem.querySelector('.sellerProfileText').children[0];
         if (!data.innerHTML.toLowerCase().startsWith(query.toLowerCase())){
             elem.style.display = 'none';
         }
