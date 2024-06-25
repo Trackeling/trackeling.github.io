@@ -13,7 +13,7 @@
         font-family: 'Libre Franklin'; font-size: 14px;
         color: #272634;
     }
-    
+
     .title{
         background-color: #FFA401;
         padding: 20px 0px;
@@ -27,7 +27,7 @@
         font-weight: 900;
         text-align: center;
     }
-    
+
     .chat-container{
         background-color: #FFA401;
         display: flex;
@@ -46,7 +46,7 @@
     .content p{
         padding: 5px;
     }
-    
+
     .name{
         font-weight: bold;
     }
@@ -72,7 +72,7 @@
         color: #FFA401
     }
 
-  .navbar{
+    .navbar{
         position: fixed;
         width: -webkit-fill-available;
         bottom: 0;
@@ -110,7 +110,7 @@
         height: 32;
         fill: none;
     }
-    
+
     .navBtn .searchBtn path{
         stroke: #FEF9FF;
         stroke-width: 3.5;
@@ -161,5 +161,6 @@
     }
 
 
-}}
-}
+    }}
+    }
+
