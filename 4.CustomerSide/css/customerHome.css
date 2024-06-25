@@ -18,7 +18,11 @@
 
     .header{
         background-color: #FFA203;
-        padding: 10px;
+        padding: 18px;
+    }
+
+    .logo{
+        margin-left: 3vw;
     }
 
     .logoAndProf{
@@ -34,7 +38,9 @@
     }
 
     .infoandprof .info img{
-        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        width: 8vw;
     }
 
     .logo img{
@@ -48,6 +54,8 @@
     .prof img{
         width: 44px;
         border-radius: 100%;
+        margin-right: 4vw;
+        margin-left: 1vw;
     }
 
     .searchBar{
@@ -224,3 +232,4 @@
         fill: #FEF9FF;
     }
 }
+
