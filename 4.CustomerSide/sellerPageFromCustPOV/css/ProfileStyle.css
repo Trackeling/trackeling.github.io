@@ -79,7 +79,7 @@
 }
 
 .text-detail-profile > h1 {
-  width: 50%;
+  width: 80%;
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
@@ -229,6 +229,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 60px;
+}
+
+.tdkjual img{
+  width:90vw;
+  margin-left:-1vw;
 }
 
 .kotak {
@@ -409,4 +414,3 @@
       filter: blur(10px);
   }
 }
-
