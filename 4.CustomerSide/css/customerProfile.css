@@ -35,6 +35,8 @@ body {
     height: auto;
     display: block;
     justify-content: center;
+    margin-right: 16vw;
+    margin-left: 5vw;
   }
 
   .info{
@@ -42,6 +44,7 @@ body {
     height: auto;
     display: block;
     justify-content: center;
+    margin-left: 14vw;
   }
 
   .defaultprofile{
