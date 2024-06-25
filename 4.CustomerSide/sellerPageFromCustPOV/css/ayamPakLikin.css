@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+
+@media screen and (max-width: 425px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        background-color: #FEF9FF;
+    }
+
+    .header{
+        height: 60px;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .header a{
+        position: absolute;
+        left: 30px;
+    }
+
+    .fotoGerobak{
+        height: 250px;
+    }
+
+    .fotoGerobak img{
+        width: 100vw;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .fotoProfile{
+        position: absolute;
+        left: 140px;
+        top: 240px;
+        border-radius: 100%;
+    }
+
+    .fotoProfile img{
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: solid 3px #FFA401;
+    }
+
+    .profileText{
+        background-color: #FFA401;
+        padding: 100px 50px 50px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        text-align: center;
+    }
+
+    .otherInfo{
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        align-self: center;
+        top: 525px;
+    }
+
+    .otherInfo .distance{
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 50px;
+        box-shadow: 0 2px 3px #2B2A37;
+        background-color: #FEF9FF;
+    }
+
+    .distance p{
+        color: #2B2A37;
+    }
+
+    .distance p span{
+        font-weight: 600;
+    }
+
+    .otherInfo .like{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        box-shadow: 0 2px 3px #2B2A37;
+        background-color: #FEF9FF;
+
+    }
+
+    .otherInfo .chat{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        box-shadow: 0 2px 3px #2B2A37;
+        background-color: #FEF9FF;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .container .locationPrev{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        gap: 10px;
+        width: 100vw;
+    }
+
+    .locationPrev h2{
+        text-align: left;
+    }
+    
+    .locationPrev > img{
+        border: solid 2px #2B2A37;
+        border-radius: 5px;
+        width: 90%;
+    }
+            
+    .locationPrev .buttonAction{
+        position: absolute;
+        display: flex;
+        align-self: center;
+        bottom: -15px;
+        gap: 15px;
+    }
+
+    .locationPrev .buttonAction img{
+        background-color: #2B2A37;
+        height: 25px;
+        width: 25px;
+        padding: 5px 30px;
+        border-radius: 50px;
+    }
+
+    .container .menuDIV{
+        margin: 20px 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menuDIV .menus{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .menus .menuCard{
+        padding-bottom: 10px;
+        border: solid 2px #2B2A37;
+        border-radius: 15px;
+        position: relative;
+        height: 180px;
+    }
+
+    .menuCard .menuPrev{
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .menuPrev img{
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+    }
+
+    .menuCard .price{
+        background-color: #FEF9FF;
+        border-radius: 50px;
+        position: absolute;
+        top: 100px;
+        left: 5px;
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .menuCard h4{
+        padding: 0 10px;
+        font-size: 20px;
+    }
+
+    .menuCard > p{
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .navbar{
+        position: sticky;
+        z-index: 99;
+        bottom: 0;
+        height: 50px;
+        border-radius: 26px 26px 0 0;
+        background-color: #2B2A37;
+        padding: 0 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navBtn{
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+    }
+
+    .navBtn .homeBtn{
+        width: 28;
+        height: 28;
+        fill: none; 
+    }
+
+    .navBtn .homeBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linejoin: round;
+    }
+
+    .navBtn .searchBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+    
+    .navBtn .searchBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linejoin: round;
+    }
+
+    .navbar .chatBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+
+    .navbar .chatBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
+
+    .navbar .profileBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+
+    .navbar .profileBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .navbar .homeBtn:hover{
+        fill: #FEF9FF;
+    }
+
+    .navbar .chatBtn:hover path:first-of-type{
+        fill: #FEF9FF;
+    }
+
+    .navbar .searchBtn:hover{
+        fill: #FEF9FF;
+    }
+
+    .navbar .profileBtn:hover{
+        fill: #FEF9FF;
+    }
+
+    .waitingDIV{
+        width: 70vw;
+        height: 50vh;
+        position: absolute;
+        position: fixed;
+        top: 15vh;
+        bottom: 15vh;
+        left: 15vw;
+        right: 15vw;
+        border: solid 10px #877B7F;
+        border-radius: 26px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        background-color: #FFFFFF;
+    }
+
+    .waitingDIV h5{
+        font-size: 20px;
+    }
+
+    .waitingDIV p{
+        text-align: center;
+    }
+
+    .waitingDIV button{
+        width: 150px;
+        height: 40px;
+        background-color: #ff0000;
+        border: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 80px;
+    }
+
+    .acceptDIV{
+        width: 70vw;
+        height: 50vh;
+        position: absolute;
+        position: fixed;
+        top: 15vh;
+        bottom: 15vh;
+        left: 15vw;
+        right: 15vw;
+        border: solid 10px #EE781D;
+        border-radius: 26px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        background-color: #FFFFFF;
+    }
+
+    .acceptDIV h5{
+        font-size: 20px;
+    }
+
+    .acceptDIV p{
+        text-align: center;
+    }
+
+    .blur{
+        filter: blur(10px);
+    }
+}
