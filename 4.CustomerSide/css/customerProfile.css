@@ -55,15 +55,7 @@ body {
 
   .topbar {
     box-sizing: border-box;
-  }
-
-  .topbar:first-child {
-    margin-left: 1vw;
-    margin-right: 25vw;
-  }
-
-  .topbar:last-child {
-    margin-left: 5vw;
+    margin-right: 3vw;
   }
 
   .profilee {
