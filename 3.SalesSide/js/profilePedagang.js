@@ -6,7 +6,7 @@ let profilePhotoEdited = false;
 function editProfile() {
     const editIcons = document.getElementsByClassName('editprof');
     for (let i = 0; i < editIcons.length; i++) {
-        editIcons[i].style.opacity = "100%";
+        editIcons[i].style.display = "block";
     }
 
     const camerabtn = document.getElementById('camerabtn');
@@ -26,8 +26,8 @@ function editProfile() {
         camerabtn2.style.display = "none";
     }
 
-    editbtn.style.opacity = "0";
-    check.style.opacity = "100%";
+    editbtn.style.display = "none";
+    check.style.display = "block";
 
     alert("Anda hanya dapat mengubah profil Anda sekali dalam 3 bulan");
 }
@@ -35,7 +35,7 @@ function editProfile() {
 function checked() {
     const editIcons = document.getElementsByClassName('editprof');
     for (let i = 0; i < editIcons.length; i++) {
-        editIcons[i].style.opacity = "0";
+        editIcons[i].style.display = "none";
     }
 
     const camerabtn = document.getElementById('camerabtn');
@@ -47,8 +47,8 @@ function checked() {
     const editbtn = document.getElementById('edit');
     const check = document.getElementById('checkmark');
 
-    editbtn.style.opacity = "100%";
-    check.style.opacity = "0";
+    editbtn.style.display = "block";
+    check.style.display = "none";
 }
 
 function saveChanges() {
