@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre Franklin');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 425px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Libre Franklin'; font-size: 14px;
+        color: #272634;
+    }
+    
+    .title{
+        background-color: #FFA401;
+        padding: 20px 0px;
+        border-bottom: 1px solid #272634;
+        /* border-top-left-radius: 30px;
+        border-top-right-radius: 30px; */
+    }
+    .title p{
+        margin: 0;
+        font-size: 28px;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    .content{
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+    }
+
+  .navbar{
+        position: sticky;
+        z-index: 99;
+        bottom: 0;
+        height: 50px;
+        border-radius: 26px 26px 0 0;
+        background-color: #2B2A37;
+        padding: 0 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navBtn{
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+    }
+
+    .navBtn .homeBtn{
+        width: 28;
+        height: 28;
+        fill: none; 
+    }
+
+    .navBtn .homeBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linejoin: round;
+    }
+
+    .navBtn .searchBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+
+    .navBtn .searchBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linejoin: round;
+    }
+
+    .navbar .chatBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+
+    .navbar .chatBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+    }
+
+    .navbar .profileBtn{
+        width: 32; 
+        height: 32;
+        fill: none;
+    }
+
+    .navbar .profileBtn path{
+        stroke: #FEF9FF;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .navbar .homeBtn:hover{
+        fill: #FEF9FF;
+    }
+
+    .navbar .chatBtn:hover path:first-of-type{
+        fill: #FEF9FF;
+    }
+
+    .navbar .searchBtn:hover{
+        fill: #FEF9FF;
+    }
+
+    .navbar .profileBtn:hover{
+        fill: #FEF9FF;
+    }
+
+    .waitingDIV{
+        width: 70vw;
+        height: 50vh;
+        position: absolute;
+        position: fixed;
+        top: 15vh;
+        bottom: 15vh;
+        left: 15vw;
+        right: 15vw;
+        border: solid 10px #877B7F;
+        border-radius: 26px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        background-color: #FFFFFF;
+    }
+
+    .waitingDIV h5{
+        font-size: 25px;
+    }
+
+    .waitingDIV p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .waitingDIV .timer{
+        padding: 10px 30px;
+        box-shadow: 0px 2px 3px #272634;
+        border-radius: 50px;
+    }
+
+    .waitingDIV .containerButton{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .waitingDIV button{
+        border: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 80px;
+    }
+    .blur{
+        filter: blur(10px);
+    }
+}
