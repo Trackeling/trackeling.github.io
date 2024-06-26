@@ -20,6 +20,7 @@ function checkValidation(){
     const isSdanKAggree = checkSNK(TermsAndCond);
 
     if(isNameValid && isAddressValid && isEmailValid && isPassValid && isSdanKAggree){
+        localStorage.setItem('selledItem', selledItem.value); 
         location.href = "sellerAddMenu.html";
     }
     else{
