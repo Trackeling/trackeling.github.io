@@ -94,12 +94,12 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
         alert("Foto background harus diisi.");
         return;
     }
-
+    
     if (profilePhoto === '' || profilePhoto === 'assets/images/DefaultFoto.png') { 
         alert("Foto profil harus diisi.");
         return;
     }
-
+    
     if (menuPhoto === '' || menuPhoto === 'assets/icons/BackgroundFotomenu.png') { 
         alert("Foto menu harus diisi.");
         return;
