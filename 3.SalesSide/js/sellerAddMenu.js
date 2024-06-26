@@ -68,9 +68,9 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
     var desc = document.getElementById("namadesc").value;
     var price = document.getElementById("harganum").value;
     var category = document.getElementById("selkat").value;
-    var backgroundPhoto = document.getElementById("ImageGerobak").src;
-    var profilePhoto = document.getElementById("MukaPedagang").src;
-    var menuPhoto = document.getElementById("FotoMenu").src;
+    var backgroundPhoto = document.getElementById("ImageGerobak").value;
+    var profilePhoto = document.getElementById("MukaPedagang").value;
+    var menuPhoto = document.getElementById("FotoMenu").value;
     var description = document.getElementById("inputDeskripsiDagang").value;
 
     var menuTrim = menu.trim();
