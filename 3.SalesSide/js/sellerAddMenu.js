@@ -39,23 +39,6 @@ function previewFotoMenu(input) {
   }
 }
 
-function editNamaDagangan() {
-  var pElement = document.querySelector('.namaDagang');
-  var inputElement = document.getElementById('inputNamaDagang');
-  inputElement.value = pElement.innerText;
-  pElement.classList.add('hidden');
-  inputElement.classList.remove('hidden');
-  inputElement.focus();
-}
-
-function saveNamaDagangan() {
-  var pElement = document.querySelector('.namaDagang');
-  var inputElement = document.getElementById('inputNamaDagang');
-  pElement.innerText = inputElement.value;
-  inputElement.classList.add('hidden');
-  pElement.classList.remove('hidden');
-}
-
 function editDeskripsiDagangan() {
   var pElement = document.querySelector('.deskripsiDagang');
   var inputElement = document.getElementById('inputDeskripsiDagang');
@@ -79,6 +62,9 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
     var desc = document.getElementById("namadesc").value;
     var price = document.getElementById("harganum").value;
     var category = document.getElementById("selkat").value;
+    var backgroundPhoto = document.getElementById("ImageGerobak").src;
+    var profilePhoto = document.getElementById("MukaPedagang").src;
+    var description = document.getElementById("inputDeskripsiDagang").value;
 
     var menuTrim = menu.trim();
     if (menuTrim.length <= 4) {
@@ -97,9 +83,25 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
         return;
     }
 
+    if (backgroundPhoto === '' || backgroundPhoto === 'default-image-path') { // Replace 'default-image-path' with the default src path of the image
+        alert("Foto background harus diisi.");
+        return;
+    }
+
+    if (profilePhoto === '' || profilePhoto === 'default-image-path') { // Replace 'default-image-path' with the default src path of the image
+        alert("Foto profil harus diisi.");
+        return;
+    }
+
+    if (description.trim() === '') {
+        alert("Deskripsi dagangan harus diisi.");
+        return;
+    }
+
     function isNumeric(value) {
         return !isNaN(parseFloat(value)) && isFinite(value);
     }
 
     window.location.href = "homepage(pedagang).html";
 });
+
