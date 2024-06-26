@@ -68,9 +68,6 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
     var desc = document.getElementById("namadesc").value;
     var price = document.getElementById("harganum").value;
     var category = document.getElementById("selkat").value;
-    var backgroundPhoto = document.getElementById("ImageGerobak").value;
-    var profilePhoto = document.getElementById("MukaPedagang").value;
-    var menuPhoto = document.getElementById("FotoMenu").value;
     var description = document.getElementById("inputDeskripsiDagang").value;
 
     var menuTrim = menu.trim();
@@ -87,21 +84,6 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
 
     if (!isNumeric(price)) {
         alert("Harga harus berupa angka tanpa koma.");
-        return;
-    }
-
-    if (backgroundPhoto === '' || backgroundPhoto === 'assets/icons/iconGerobak.png') { 
-        alert("Foto background harus diisi.");
-        return;
-    }
-    
-    if (profilePhoto === '' || profilePhoto === 'assets/images/DefaultFoto.png') { 
-        alert("Foto profil harus diisi.");
-        return;
-    }
-    
-    if (menuPhoto === '' || menuPhoto === 'assets/icons/BackgroundFotomenu.png') { 
-        alert("Foto menu harus diisi.");
         return;
     }
 
