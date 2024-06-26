@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const selledItemValue = localStorage.getItem('selledItem');
+    if (selledItemValue) {
+        document.querySelector('.namaDagang').innerText = selledItemValue;
+    }
+});
+
 const menuName = document.getElementById('namaMenu');
 const menuDesc = document.getElementById('DescMenu');
 const price = document.getElementById('price');
