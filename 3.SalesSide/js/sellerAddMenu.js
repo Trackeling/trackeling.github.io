@@ -109,7 +109,7 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
         return !isNaN(parseFloat(value)) && isFinite(value);
     }
 
-    // window.location.href = "homepage(pedagang).html";
+    window.location.href = "homepage(pedagang).html";
 });
 
 
