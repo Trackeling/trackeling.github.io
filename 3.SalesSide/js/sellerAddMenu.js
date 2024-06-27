@@ -5,11 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-const menuName = document.getElementById('namaMenu');
-const menuDesc = document.getElementById('DescMenu');
-const price = document.getElementById('price');
-var danger = '';
-
 function previewProfilePhotoGerobak(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
@@ -69,7 +64,25 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
     var price = document.getElementById("harganum").value;
     var category = document.getElementById("selkat").value;
     var description = document.getElementById("inputDeskripsiDagang").value;
+    let fotoGerobak = document.getElementById('inputGerobakRilCuy').files[0];
+    let fotoPedagang = document.getElementById('inputMukaPedagangRil').files[0];
+    let fotoMenu = document.getElementById('inputFotoMenuRil').files[0];
 
+    if(fotoGerobak == null){
+        alert('Anda harus memasukkan foto gerobak anda!);
+        return;
+    }
+
+    if(fotoPedagang == null){
+        alert('Anda harus memasukkan foto profil anda!);
+        return;
+    }
+
+    if(fotoMenu == null){
+        alert('Anda harus memasukkan foto menu anda!);
+        return;
+    }
+    
     var menuTrim = menu.trim();
     if (menuTrim.length <= 4) {
         alert("Menu harus terdiri dari lebih dari 4 huruf.");
