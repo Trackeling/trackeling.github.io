@@ -64,9 +64,9 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
     var price = document.getElementById("harganum").value;
     var category = document.getElementById("selkat").value;
     var description = document.getElementById("inputDeskripsiDagang").value;
-    let fotoGerobak = document.getElementById('inputGerobakRilCuy').files[0];
-    let fotoPedagang = document.getElementById('inputMukaPedagangRil').files[0];
-    let fotoMenu = document.getElementById('inputFotoMenuRil').files[0];
+    var fotoGerobak = document.getElementById('inputGerobakRilCuy').files[0];
+    var fotoPedagang = document.getElementById('inputMukaPedagangRil').files[0];
+    var fotoMenu = document.getElementById('inputFotoMenuRil').files[0];
 
     // if(fotoGerobak == null){
     //     alert('Anda harus memasukkan foto gerobak anda!);
