@@ -68,20 +68,24 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
     let fotoPedagang = document.getElementById('inputMukaPedagangRil').files[0];
     let fotoMenu = document.getElementById('inputFotoMenuRil').files[0];
 
-    if(fotoGerobak == null){
-        alert('Anda harus memasukkan foto gerobak anda!);
-        return;
-    }
+    // if(fotoGerobak == null){
+    //     alert('Anda harus memasukkan foto gerobak anda!);
+    //     return;
+    // }
 
-    if(fotoPedagang == null){
-        alert('Anda harus memasukkan foto profil anda!);
-        return;
-    }
+    // if(fotoPedagang == null){
+    //     alert('Anda harus memasukkan foto profil anda!);
+    //     return;
+    // }
 
-    if(fotoMenu == null){
-        alert('Anda harus memasukkan foto menu anda!);
-        return;
-    }
+    // if(fotoMenu == null){
+    //     alert('Anda harus memasukkan foto menu anda!);
+    //     return;
+    // }
+
+    console.log(fotoGerobak == null);
+    console.log(fotoPedagang == null);
+    console.log(fotoMenu == null);
     
     var menuTrim = menu.trim();
     if (menuTrim.length <= 4) {
@@ -109,7 +113,7 @@ document.getElementById("simpanlanjut").addEventListener("click", function () {
         return !isNaN(parseFloat(value)) && isFinite(value);
     }
 
-    window.location.href = "homepage(pedagang).html";
+    // window.location.href = "homepage(pedagang).html";
 });
 
 
